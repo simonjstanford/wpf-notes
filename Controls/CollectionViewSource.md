@@ -114,16 +114,17 @@ Note that when you bind to the group header you aren't binding to the data objec
 
 You can also use an IValueConverter for advanced grouping
 
-
+```csharp
 ICollectionView view = CollectionViewSource.GetDefaultView(lstProducts.ItemsSource);
 view.SortDescriptions.Add(new SortDescription("UnitCost", ListSortDirection.Ascending));
 PriceRangeProductGrouper grouper = new PriceRangeProductGrouper();
 grouper.GroupInterval = 50;
 view.GroupDescriptions.Add(new PropertyGroupDescription("UnitCost", grouper));
+```
 
 And the converter
 
-
+```csharp
 public class PriceRangeProductGrouper : IValueConverter
 {
     public int GroupInterval
@@ -153,15 +154,17 @@ public class PriceRangeProductGrouper : IValueConverter
         throw new NotSupportedException("This converter is for grouping only.");
     }
 }
+```
 
 To make sure virtualization still works when grouping:
 
-
+```csharp
 <ListBox VirtualizingStackPanel.IsVirtualizingWhenGrouping="True" ...
+```
 
-Filtering
+## Filtering
 
-
+```xml
 <Window.Resources>
     <CollectionViewSource x:Key="cvsActors" Source="{Binding ActorList}" >
         <CollectionViewSource.SortDescriptions>
@@ -177,16 +180,18 @@ Filtering
     <CheckBox Content="Only Joans" IsChecked="{Binding OnlyJoans}"
               Margin="15"/>
 </StackPanel>
+```
 
 In code, we add a handler for the Filter event of the CollectionViewSource. The handler is called for each item in the list.
 
-
+```csharp
 // Requires: using System.Windows.Data
 ((CollectionViewSource)this.Resources["cvsActors"]).Filter += ActorList_Filter;
+```
 
 In the handler, we set the Accepted property of the argument if the item should be included in the list.
 
-
+```csharp
 void ActorList_Filter(object sender, FilterEventArgs e)
 {
   // Set e.Accepted to true to include the item in the list
@@ -198,10 +203,11 @@ void ActorList_Filter(object sender, FilterEventArgs e)
       e.Accepted = (a.FirstName == "Joan") ? true : false;
   }
 }
+```
 
 We also have to make sure to “refresh” the CollectionViewSource when the OnlyJoans property changes. This will trigger it to re-filter the collection.
 
-
+```csharp
 private bool onlyJoans;
 public bool OnlyJoans
 {
@@ -216,16 +222,16 @@ public bool OnlyJoans
       }
   }
 }
+```
 
-
-Live Sorting
+## Live Sorting
 By default, when you’re using a CollectionViewSource to do sorting, grouping and filtering in a list-based control, the sorting/grouping/filtering behavior will only updated when you explicitly refresh the CollectionViewSource (by calling Refresh) or when you add or remove something to the collection.
 
 You can enable live sorting in the CollectionViewSource to cause it to resort items when one or more properties on the bound objects change. In the example below, we set the IsLiveSortingRequested property to true and specify that the Actor.LastName property is the property to live sort on. Now when we make a change to the last name of one of the actors, the sorting is updated.
 
 Note that the data object being bound to must implement INotifyPropertyChanged.
 
-
+```xml
 <Window.Resources>
     <CollectionViewSource x:Key="cvsActors" Source="{Binding ActorList}"
                           IsLiveSortingRequested="True">
@@ -237,9 +243,9 @@ Note that the data object being bound to must implement INotifyPropertyChanged.
         </CollectionViewSource.SortDescriptions>
     </CollectionViewSource>
 </Window.Resources>
+```
 
-
-Live Filtering
+## Live Filtering
 Like sorting, filtering in a CollectionViewSource is not automatically done when you change the contents of one of the data bound items. By default, you need to call the Refresh method of the CollectionViewSource. You can fix this by adding the FirstName property to the LiveFilteringProperties collection of the CollectionViewSource and setting IsLiveFilteringRequested to true.
 
 
@@ -255,5 +261,5 @@ Like sorting, filtering in a CollectionViewSource is not automatically done when
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI5Nzc4MjU4XX0=
+eyJoaXN0b3J5IjpbLTYyOTA3NDQ0NF19
 -->
