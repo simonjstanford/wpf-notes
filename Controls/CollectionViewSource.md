@@ -107,7 +107,7 @@ view.GroupDescriptions.Add(new PropertyGroupDescription("CategoryName"));
 
 Properties of GroupStyle class:
 
-![Properties of a ](../media/CollectionViewSource.png)
+![Properties of GroupStyle](../media/CollectionViewSource.png)
 
 
 Note that when you bind to the group header you aren't binding to the data object in the collection, you're binding to the PropertyGroupDescription object. If you want to bind to the field value for the group, you need to bind to PropertyGroupDescription.Name.
@@ -255,5 +255,5 @@ Like sorting, filtering in a CollectionViewSource is not automatically done when
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MjUwMTE1M119
+eyJoaXN0b3J5IjpbOTI5Nzc4MjU4XX0=
 -->
