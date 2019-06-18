@@ -1,9 +1,10 @@
 # Save Window State
+
 ```csharp
 using System;
 using System.Windows;
 
-namespace QuickDesign.LabelEditor.Behaviours
+namespace Behaviours
 {
    public class WindowBehaviours
    {
@@ -94,5 +95,5 @@ namespace QuickDesign.LabelEditor.Behaviours
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDE3ODE0NV19
+eyJoaXN0b3J5IjpbLTE1Mzg3ODE0M119
 -->
