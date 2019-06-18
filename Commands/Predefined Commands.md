@@ -47,7 +47,7 @@ Or in Xaml (there needs to be the appropriate methods in the code behind):
 
 If you want to use the same command object, but bind it to different executable code for different UI elements, you can instead add the CommandBinding objects to the CommandBindings for individual elements. In the code below, we create two different bindings for the ApplicationCommands.Open command.
 
-
+```csharp
 public MainWindow()
 {
   InitializeComponent();
@@ -63,9 +63,8 @@ public MainWindow()
   (sender, e) => { MessageBox.Show("Executing the Open command (version B)"); },
   (sender, e) => { e.CanExecute = CanOpenIsChecked; }));
 }
-
-
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDQ4Mjc3MDJdfQ==
+eyJoaXN0b3J5IjpbLTg0NzE1MTk0MV19
 -->
