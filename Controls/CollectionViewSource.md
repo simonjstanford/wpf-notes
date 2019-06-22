@@ -1,6 +1,6 @@
 # CollectionViewSource
 
-CollectionView objects are always created when binding a list to a itemscontrol, but normally you don't have to use it explicitly. Use CollectionViewSource as a factory that fetches the default view of a list to sort, filter or group items.
+`CollectionView` objects are always created when binding a list to a itemscontrol, but normally you don't have to use it explicitly. Use CollectionViewSource as a factory that fetches the default view of a list to sort, filter or group items.
 
 The view object that’s used depends on the type of data object. All views derive from CollectionView, but two specialized implementations derive from CollectionView: ListCollectionView and BindingListCollectionView:
 
@@ -260,5 +260,5 @@ Like sorting, filtering in a CollectionViewSource is not automatically done when
 </CollectionViewSource>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNDQ0NTgxXX0=
+eyJoaXN0b3J5IjpbMTczNzIzMTIzMSwxNjE0NDQ1ODFdfQ==
 -->
