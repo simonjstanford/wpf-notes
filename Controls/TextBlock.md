@@ -4,9 +4,9 @@ You can use the `TextTrimming` property to cause an ellipsis (three dots) to be 
 
 Possible values for `TextTrimming` area:
 
-- None – no ellipsis, text is clipped (the default)
-- CharacterEllipsis – display as many characters as possible, followed by an ellipsis
-- WordEllipsis – display as many words as possible, followed by an ellipsis
+- `None` – no ellipsis, text is clipped (the default)
+- `CharacterEllipsis` – display as many characters as possible, followed by an ellipsis
+- `WordEllipsis` – display as many words as possible, followed by an ellipsis
 
 ```xml
 <Grid>
@@ -23,5 +23,5 @@ Possible values for `TextTrimming` area:
 </Grid>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjIzNjMxNzZdfQ==
+eyJoaXN0b3J5IjpbLTc1OTU1NTU1NF19
 -->
