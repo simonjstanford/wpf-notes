@@ -42,29 +42,23 @@ Spell checking:
 
 If you want to limit a user to entering only uppercase or only lowercase in a particular TextBox, you can set the CharacterCasing property as follows:
 
+```xml
 - Normal – Default setting, allows both uppercase and lowercase
-	* 
-Lower – Force all entered text to lowercase
-	* 
-Upper – Force all entered text to uppercase
+- Lower – Force all entered text to lowercase
+- Upper – Force all entered text to uppercase
+```
 
 
-
-
-To restrict text in a TextBox:
+## Restricting text in a TextBox:
 
 A full strategy for limiting user-entered text might then include:
 
-	* 
-Handling PreviewTextInput and blocking undesirable text
-	* 
-Handling PreviewKeyDown and blocking undesirable keystrokes
-	* 
-Handling paste operations and blocking undesirable text
+- Handling PreviewTextInput and blocking undesirable text
+- Handling PreviewKeyDown and blocking undesirable keystrokes
+- Handling paste operations and blocking undesirable text
 
 
-
-
+```csharp
 public MainWindow()
 {
     this.InitializeComponent();
@@ -115,10 +109,11 @@ private void PasteHandler(object sender, DataObjectPastingEventArgs e)
     if (!textOK)
         e.CancelCommand();
 }
+```
 
 Changing text box text selection colour:
 
-
+```xml
 <!--Normally you can try to change the SystemColors by assigning them a new value in an object's Resources dictionary.
 But both the regular foreground and the selected text foreground are looking at the same key (ControlTextBrushKey) for the color.
 So you can't separate these two colors.-->
@@ -128,7 +123,7 @@ So you can't separate these two colors.-->
          VerticalAlignment="Center"
          SelectionBrush="Green"
          SelectionOpacity="0.1"/>
-
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MDYxMzg1NV19
+eyJoaXN0b3J5IjpbLTc0NDUwMjkyXX0=
 -->
