@@ -182,10 +182,11 @@ namespace WpfApp1
         }
     }
 }
+```
 
-Define the default control template in themes/generic.xaml:
+Define the default control template in `themes/generic.xaml`:
 
-
+```xml
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation";
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml";
                     xmlns:classes="clr-namespace:WpfApp1">
@@ -296,11 +297,10 @@ You can then use the default control template or define your own:
                     </Grid>
                 </ControlTemplate>
             </local:ColorPicker.Template>
-        </local:ColorPicker>
-       
+        </local:ColorPicker>     
     </StackPanel>
 </Window>
-
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NTg0Mzg5MV19
+eyJoaXN0b3J5IjpbLTUyMzg2Mjk4XX0=
 -->
