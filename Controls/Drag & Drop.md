@@ -41,7 +41,7 @@ private void lbDrop(object sender, DragEventArgs e)
 ```
 
 
-Copying images within the application:
+## Copying images within the application
 
 ```xml
 <Grid>
@@ -56,7 +56,7 @@ Copying images within the application:
 </Grid>
 ```
 
-```
+```csharp
 private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
 {
     Image img = e.Source as Image;
@@ -94,12 +94,13 @@ private void Image_DragOver(object sender, DragEventArgs e)
 
     e.Handled = true;
 }
+```
 
+## File drops
 
-File drops:
 https://wpf.2000things.com/2012/12/10/708-dragging-a-file-into-a-wpf-application/
 
-
+```csharp
 private void Window_DragEnter(object sender, DragEventArgs e)
 {
     if (e.Data.GetDataPresent(DataFormats.FileDrop))
@@ -130,7 +131,7 @@ private void Window_Drop(object sender, DragEventArgs e)
 
     txtContent.Text = File.ReadAllText(filenames[0]);
 }
-
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NjkwNzEyNF19
+eyJoaXN0b3J5IjpbLTEzMTQwNjEzNzBdfQ==
 -->
