@@ -44,13 +44,13 @@ The FlowDocument control provides richer functionality than Label and TextBlock 
 </FlowDocument>
 ```
 
-Because `FlowDocument` does not derive from `UIElement`, you can’t include it in a Panel control. You can use a `FlowDocument as the main content in any ContentControl. If you do this, the FlowDocument will automatically be hosted in a FlowDocumentReader.
+Because `FlowDocument` does not derive from `UIElement`, you can’t include it in a Panel control. You can use a `FlowDocument` as the main content in any `ContentControl`. If you do this, the `FlowDocument` will automatically be hosted in a `FlowDocumentReader`.
 
-The FlowDocumentReader displays some portion of a FlowDocument and provides controls to either page or scroll through the rest of the document. It also supports displaying the document in multiple columns and provides an easy way to adjust the font size.
+The `FlowDocumentReader` displays some portion of a `FlowDocument` and provides controls to either page or scroll through the rest of the document. It also supports displaying the document in multiple columns and provides an easy way to adjust the font size.
 
-To add FlowDocument to a Panel control:
+To add `FlowDocument` to a Panel control:
 
-
+```xml
 <Grid>
     <FlowDocumentScrollViewer>
         <FlowDocument>
@@ -60,10 +60,10 @@ To add FlowDocument to a Panel control:
         </FlowDocument>
     </FlowDocumentScrollViewer>
 </Grid>
-
+```
 
 https://wpf.2000things.com/2011/03/23/254-types-of-containers-for-hosting-flowdocument/
 https://wpf.2000things.com/2011/03/24/255-flow-text-around-an-image-in-a-flowdocument/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNjkzMjMwMV19
+eyJoaXN0b3J5IjpbMjA5MDg0OTc3MF19
 -->
