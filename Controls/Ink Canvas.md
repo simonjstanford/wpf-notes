@@ -23,25 +23,25 @@ The `InkCanvas` control has an `EditingMode` property that allows you to change 
 
 - `None – You can’t drawn on the InkCanvas at all
 - `Ink` – You can draw strokes, using a mouse or stylus
--` GestureOnly – Responds to gestures, does not allow drawing. Used to let the user draw a shape and then the application tries to determine the shape they drew, e.g. circle, square. 
-- InkAndGesture – Responds to gestures, or allows drawing
-- Select – You can select elements that you previously drew
-- EraseByPoint – You can use the mouse or stylus as an eraser
-- EraseByStroke – You can erase entire strokes by clicking on them
+- `GestureOnly` – Responds to gestures, does not allow drawing. Used to let the user draw a shape and then the application tries to determine the shape they drew, e.g. circle, square. 
+- `InkAndGesture` – Responds to gestures, or allows drawing
+- `Select` – You can select elements that you previously drew
+- `EraseByPoint` – You can use the mouse or stylus as an eraser
+- `EraseByStroke` – You can erase entire strokes by clicking on them
 
 
 ## Style
-You can specify a number of different drawing attributes that affect how new strokes appear when drawing on an InkCanvas control. You set the DefaultDrawingAttributes property of the InkCanvas to an instance of the DrawingAttributes class, which contains properties that you can set to change how new strokes appear.
+You can specify a number of different drawing attributes that affect how new strokes appear when drawing on an InkCanvas control. You set the `DefaultDrawingAttributes` property of the `InkCanvas` to an instance of the `DrawingAttributes` class, which contains properties that you can set to change how new strokes appear.
 
-You can modify the style of existing strokes by changing the instance of the DrawingAttributes class associated with the desired object in the InkCanvas.Strokes collection.
+You can modify the style of existing strokes by changing the instance of the `DrawingAttributes` class associated with the desired object in the `InkCanvas.Strokes` collection.
 
-Properties of DrawingAttributes include:
+Properties of `DrawingAttributes` include:
 
-- Color – the color of the new stroke
-- Height – height of the brush used to draw a stroke
-- Width – width of the brush used to draw a stroke
-- FitToCurve – if true, smooths out the stroke
-- IsHighlighter – if true, stroke is somewhat translucent, simulating a highlighter
+- `Color` – the color of the new stroke
+- `Height` – height of the brush used to draw a stroke
+- `Width` – width of the brush used to draw a stroke
+- `FitToCurve` – if true, smooths out the stroke
+- `IsHighlighter` – if true, stroke is somewhat translucent, simulating a highlighter
 
 
 
@@ -49,5 +49,5 @@ Properties of DrawingAttributes include:
 https://wpf.2000things.com/2012/02/07/489-using-the-inkcanvas-to-recognize-gestures-part-i/
 https://wpf.2000things.com/2012/02/08/490-using-the-inkcanvas-to-recognize-gestures-part-ii/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk5NTkzNzc1XX0=
+eyJoaXN0b3J5IjpbLTE1Nzk2MzcwMTVdfQ==
 -->
