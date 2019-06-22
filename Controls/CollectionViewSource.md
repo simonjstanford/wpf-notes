@@ -41,7 +41,7 @@ xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowBase"
 </StackPanel>
 ```
 
-You also can perform a custom sort, but only if you’re using the `ListCollectionView` (not the `BindingListCollectionView`). The `ListCollectionView` provides a `CustomSort` property that accepts an IComparer object that performs the comparison between any two data items and indicates which one should be considered greater than the other.
+You also can perform a custom sort, but only if you’re using the `ListCollectionView` (not the `BindingListCollectionView`). The `ListCollectionView` provides a `CustomSort` property that accepts an `IComparer` object that performs the comparison between any two data items and indicates which one should be considered greater than the other.
 
 ```csharp
 public class SortByModelNameLength : System.Collections.IComparer
@@ -105,14 +105,14 @@ ICollectionView view = CollectionViewSource.GetDefaultView(lstProducts.ItemsSour
 view.GroupDescriptions.Add(new PropertyGroupDescription("CategoryName"));
 ```
 
-Properties of GroupStyle class:
+Properties of `GroupStyle` class:
 
 ![Properties of GroupStyle](../media/CollectionViewSource.png)
 
 
-Note that when you bind to the group header you aren't binding to the data object in the collection, you're binding to the PropertyGroupDescription object. If you want to bind to the field value for the group, you need to bind to PropertyGroupDescription.Name.
+Note that when you bind to the group header you aren't binding to the data object in the collection, you're binding to the `PropertyGroupDescription` object. If you want to bind to the field value for the group, you need to bind to `PropertyGroupDescription.Name`.
 
-You can also use an IValueConverter for advanced grouping
+You can also use an `IValueConverter` for advanced grouping
 
 ```csharp
 ICollectionView view = CollectionViewSource.GetDefaultView(lstProducts.ItemsSource);
@@ -182,7 +182,7 @@ To make sure virtualization still works when grouping:
 </StackPanel>
 ```
 
-In code, we add a handler for the Filter event of the CollectionViewSource. The handler is called for each item in the list.
+In code, we add a handler for the `Filter` event of the `CollectionViewSource`. The handler is called for each item in the list.
 
 ```csharp
 // Requires: using System.Windows.Data
@@ -205,7 +205,7 @@ void ActorList_Filter(object sender, FilterEventArgs e)
 }
 ```
 
-We also have to make sure to “refresh” the CollectionViewSource when the OnlyJoans property changes. This will trigger it to re-filter the collection.
+We also have to make sure to “refresh” the `CollectionViewSource` when the `OnlyJoans` property changes. This will trigger it to re-filter the collection.
 
 ```csharp
 private bool onlyJoans;
@@ -225,9 +225,9 @@ public bool OnlyJoans
 ```
 
 ## Live Sorting
-By default, when you’re using a CollectionViewSource to do sorting, grouping and filtering in a list-based control, the sorting/grouping/filtering behavior will only updated when you explicitly refresh the CollectionViewSource (by calling Refresh) or when you add or remove something to the collection.
+By default, when you’re using a `CollectionViewSource` to do sorting, grouping and filtering in a list-based control, the sorting/grouping/filtering behavior will only updated when you explicitly refresh the `CollectionViewSource` (by calling Refresh) or when you add or remove something to the collection.
 
-You can enable live sorting in the CollectionViewSource to cause it to resort items when one or more properties on the bound objects change. In the example below, we set the IsLiveSortingRequested property to true and specify that the Actor.LastName property is the property to live sort on. Now when we make a change to the last name of one of the actors, the sorting is updated.
+You can enable live sorting in the `CollectionViewSource` to cause it to resort items when one or more properties on the bound objects change. In the example below, we set the IsLiveSortingRequested property to true and specify that the Actor.LastName property is the property to live sort on. Now when we make a change to the last name of one of the actors, the sorting is updated.
 
 Note that the data object being bound to must implement INotifyPropertyChanged.
 
@@ -260,5 +260,5 @@ Like sorting, filtering in a CollectionViewSource is not automatically done when
 </CollectionViewSource>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyOTY1NDkyOSwxNjE0NDQ1ODFdfQ==
+eyJoaXN0b3J5IjpbLTE2Nzk3NTA4NDksMTYxNDQ0NTgxXX0=
 -->
