@@ -1,12 +1,12 @@
 # CollectionViewSource
 
-`CollectionView` objects are always created when binding a list to a itemscontrol, but normally you don't have to use it explicitly. Use CollectionViewSource as a factory that fetches the default view of a list to sort, filter or group items.
+`CollectionView` objects are always created when binding a list to a `ItemsControl`, but normally you don't have to use it explicitly. Use `CollectionViewSource` as a factory that fetches the default view of a list to sort, filter or group items.
 
-The view object that’s used depends on the type of data object. All views derive from CollectionView, but two specialized implementations derive from CollectionView: ListCollectionView and BindingListCollectionView:
+The view object that’s used depends on the type of data object. All views derive from `CollectionView`, but two specialized implementations derive from `CollectionView`: `ListCollectionView` and `BindingListCollectionView`:
 
-- If your data source implements IBindingList, a BindingListCollectionView is created. This happens when you bind an ADO.NET DataTable.
-- If your data source doesn’t implement IBindingList but it implements IList, a ListCollectionView is created. This happens when you bind an ObservableCollection, like the list of products.
-- If your data source doesn’t implement IBindingList or IList but it implements IEnumerable, you get a basic CollectionView.
+- If your data source implements `IBindingList`, a `BindingListCollectionView` is created. This happens when you bind an ADO.NET `DataTable`.
+- If your data source doesn’t implement `IBindingList` but it implements` IList`, a `ListCollectionView` is created. This happens when you bind an `ObservableCollection`, like the list of products.
+- If your data source doesn’t implement `IBindingList` or`IList` but it implements `IEnumerable`, you get a basic `CollectionView`.
 
 
 To fetch the default view:
@@ -41,7 +41,7 @@ xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowBase"
 </StackPanel>
 ```
 
-You also can perform a custom sort, but only if you’re using the ListCollectionView (not the BindingListCollectionView). The ListCollectionView provides a CustomSort property that accepts an IComparer object that performs the comparison between any two data items and indicates which one should be considered greater than the other.
+You also can perform a custom sort, but only if you’re using the `ListCollectionView` (not the `BindingListCollectionView`). The `ListCollectionView` provides a `CustomSort` property that accepts an IComparer object that performs the comparison between any two data items and indicates which one should be considered greater than the other.
 
 ```csharp
 public class SortByModelNameLength : System.Collections.IComparer
@@ -260,5 +260,5 @@ Like sorting, filtering in a CollectionViewSource is not automatically done when
 </CollectionViewSource>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNzIzMTIzMSwxNjE0NDQ1ODFdfQ==
+eyJoaXN0b3J5IjpbLTQyOTY1NDkyOSwxNjE0NDQ1ODFdfQ==
 -->
