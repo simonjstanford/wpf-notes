@@ -183,20 +183,18 @@ When you implement a custom dependency property and you register the property by
 - `PropertyChangedCallback` – respond to new effective value for the property
 
 `UIPropertyMetadata` – derives from `PropertyMetadata` and adds:
-- IsAnimationProhibited – disable animations for this property?
+- `IsAnimationProhibited` – disable animations for this property?
 
-
-
-FrameworkPropertyMetadata – derives from UIPropertyMetadata and adds:
-- AffectsArrange, AffectsMeasure, AffectsParentArrange, AffectsParentMeasure, AffectsRender – Should layout calculations be re-run after property value changes?
-- BindsTwoWayByDefault, DefaultUpdateSourceTrigger, IsDataBindingAllowed, IsNotDataBindable – Dictates how property participates in data binding
-- Inherits, OverridesInheritanceBehavior – Does inheritance work for this property?
-- Journal – Store this value when journaling?
-- SubPropertiesDoNotAffectRender – Check properties of this object when layout changes?
+`FrameworkPropertyMetadata` – derives from `UIPropertyMetadata` and adds:
+- `AffectsArrange`, `AffectsMeasure`, `AffectsParentArrange`, `AffectsParentMeasure`, `AffectsRender` – Should layout calculations be re-run after property value changes?
+- `BindsTwoWayByDefault`, `DefaultUpdateSourceTrigger`, `IsDataBindingAllowed`, `IsNotDataBindable` – Dictates how property participates in data binding
+- `Inherits`, `OverridesInheritanceBehavior` – Does inheritance work for this property?
+- `Journal` – Store this value when journaling?
+- `SubPropertiesDoNotAffectRender` – Check properties of this object when layout changes?
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzkzMTEyNjNdfQ==
+eyJoaXN0b3J5IjpbLTIyMzY0MTAwOV19
 -->
