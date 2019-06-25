@@ -70,11 +70,11 @@ private void Image_Drop(object sender, DragEventArgs e)
     Image img = e.Source as Image;
     img.Source = (BitmapSource)e.Data.GetData(DataFormats.Text);
 }
-
+```
 
 Displaying a no entry mouse icon for incorrect data formats:
 
-
+```csharp
 private void Image_DragEnter(object sender, DragEventArgs e)
 {
     if (e.Data.GetDataPresent(DataFormats.Bitmap))
@@ -133,5 +133,5 @@ private void Window_Drop(object sender, DragEventArgs e)
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTQwNjEzNzBdfQ==
+eyJoaXN0b3J5IjpbNzcxMDE5MzQ5LC0xMzE0MDYxMzcwXX0=
 -->
