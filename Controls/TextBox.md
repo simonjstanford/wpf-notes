@@ -40,7 +40,7 @@ Spell checking:
         SpellCheck.IsEnabled="True"/>
 ```
 
-If you want to limit a user to entering only uppercase or only lowercase in a particular TextBox, you can set the CharacterCasing property as follows:
+If you want to limit a user to entering only uppercase or only lowercase in a particular `TextBox`, you can set the `CharacterCasing` property as follows:
 
 ```xml
 - Normal – Default setting, allows both uppercase and lowercase
@@ -53,8 +53,8 @@ If you want to limit a user to entering only uppercase or only lowercase in a pa
 
 A full strategy for limiting user-entered text might then include:
 
-- Handling PreviewTextInput and blocking undesirable text
-- Handling PreviewKeyDown and blocking undesirable keystrokes
+- Handling `PreviewTextInput` and blocking undesirable text
+- Handling `PreviewKeyDown` and blocking undesirable keystrokes
 - Handling paste operations and blocking undesirable text
 
 
@@ -125,5 +125,5 @@ So you can't separate these two colors.-->
          SelectionOpacity="0.1"/>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NDUwMjkyXX0=
+eyJoaXN0b3J5IjpbMTYzOTkwNzIwNCwtNzQ0NTAyOTJdfQ==
 -->
