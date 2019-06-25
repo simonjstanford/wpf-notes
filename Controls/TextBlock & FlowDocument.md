@@ -11,14 +11,14 @@
 ```
 
 ## Flow Document
-The FlowDocument control provides richer functionality than Label and TextBlock for displaying text. A FlowDocument contains a collection of blocks, each of which is a separate paragraph, list, section or table.  There are five different types of blocks that you can include in a FlowDocument. A block can be one of the following:
+The `FlowDocument` control provides richer functionality than `Label` and `TextBlock` for displaying text. A `FlowDocument` contains a collection of blocks, each of which is a separate paragraph, list, section or table.  There are five different types of blocks that you can include in a `FlowDocument`. A block can be one of the following:
 
-- Paragraph – A paragraph of text
-- List – A list of text items, typically displayed with a bullet character. https://wpf.2000things.com/2011/03/17/248-creating-a-list-in-a-flowdocument/
-- Table – A table, with rows and columns. https://wpf.2000things.com/2011/03/18/249-creating-a-table-in-a-flowdocument/
-- Section – A section of the document that can, in turn, contain other blocks. https://wpf.2000things.com/2011/03/19/250-including-a-section-block-in-a-flowdocument/
-- BlockUIContainer – A placeholder that allows inserting any UIElement into the document. https://wpf.2000things.com/2011/03/20/251-embedding-an-uielement-into-a-flowdocument/
-- We can also add Span – this tag can come inside paragraph and you can change fonts, color etc.
+- `Paragraph` – A paragraph of text
+- `List` – A list of text items, typically displayed with a bullet character. https://wpf.2000things.com/2011/03/17/248-creating-a-list-in-a-flowdocument/
+- `Table` – A table, with rows and columns. https://wpf.2000things.com/2011/03/18/249-creating-a-table-in-a-flowdocument/
+- `Section` – A section of the document that can, in turn, contain other blocks. https://wpf.2000things.com/2011/03/19/250-including-a-section-block-in-a-flowdocument/
+- `BlockUIContainer` – A placeholder that allows inserting any UIElement into the document. https://wpf.2000things.com/2011/03/20/251-embedding-an-uielement-into-a-flowdocument/
+- We can also add `Span` – this tag can come inside paragraph and you can change fonts, color etc.
 
 
 
@@ -65,5 +65,5 @@ To add `FlowDocument` to a Panel control:
 https://wpf.2000things.com/2011/03/23/254-types-of-containers-for-hosting-flowdocument/
 https://wpf.2000things.com/2011/03/24/255-flow-text-around-an-image-in-a-flowdocument/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MDg0OTc3MF19
+eyJoaXN0b3J5IjpbMzkzODM3MTA2LDIwOTA4NDk3NzBdfQ==
 -->
