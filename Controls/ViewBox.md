@@ -1,6 +1,6 @@
 # ViewBox
 
-A ViewBox is typically used to scale a panel containing other elements. One common use of a ViewBox is to scale the contents of a Canvas panel. We might include several elements within a Canvas that has an explicit size. If we re-size the window, however, the canvas stays the same size. We could have had the Canvas stretch to fill the remaining area, but its elements would still be the same size. We can get the elements within the Canvas to scale by wrapping the Canvas in a ViewBox. Whatever content you set as the content wrapped by a ViewBox, that content needs to be able to determine its own size. The ViewBox needs to know what size to make the content at a scale of 1.0.
+A `ViewBox` is typically used to scale a panel containing other elements. One common use of a `ViewBox` is to scale the contents of a `Canvas panel. We might include several elements within a Canvas that has an explicit size. If we re-size the window, however, the canvas stays the same size. We could have had the Canvas stretch to fill the remaining area, but its elements would still be the same size. We can get the elements within the Canvas to scale by wrapping the Canvas in a ViewBox. Whatever content you set as the content wrapped by a ViewBox, that content needs to be able to determine its own size. The ViewBox needs to know what size to make the content at a scale of 1.0.
 
 
 ```xml
@@ -34,5 +34,5 @@ You can change this behavior by setting the StretchDirection of the ViewBox to o
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MzM1NzUzN119
+eyJoaXN0b3J5IjpbLTkyMzg2NDMwNSwxNjgzMzU3NTM3XX0=
 -->
