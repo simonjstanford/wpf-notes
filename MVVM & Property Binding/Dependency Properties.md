@@ -55,15 +55,15 @@ private static object OnAgeCoerceValue(DependencyObject depObj, object baseValue
 
 A CLR property reads directly from the private member of the class. The `Get` and `Set` methods of the class retrieve and store the values of the property. Whereas when you set a value of a Dependency Property it is not stored in a field of your object, but in a dictionary of keys and values provided by the base class `DependencyObject`. The key of an entry is the name of the property and the value is the value you want to set. Most people use dependency properties for user controls.
 
-Advantages of a Dependency Property Less memory consumption
-
+Advantages of a Dependency Property 
+ - Less memory consumption
  - The Dependency Property stores the property only when it is altered or modified. Hence a huge amount of memory for fields are free.
 - Property value inheritance - It means that if no value is set for the property then it will return to the inheritance tree up to where it gets the value.
-- Change notification and Data Bindings - Whenever a property changes its value it provides notification in the Dependency Property using INotifyPropertyChange and also helps in data binding.
+- Change notification and Data Bindings - Whenever a property changes its value it provides notification in the Dependency Property using `INotifyPropertyChanged` and also helps in data binding.
 - Participation in animation, styles and templates - A Dependency Property can animate, set styles using style setters and even provide templates for the control.
 - CallBacks - Whenever a property is changed you can have a callback invoked.
 - Resources - You can define a Resource for the definition of a Dependency Property in XAML.
-- Overriding Metadata - You can define certain behaviours of a Dependency Property using PropertyMetaData. Thus, overriding a metadata from a derived property will not require you to redefine or re-implement the entire property definition.
+- Overriding Metadata - You can define certain behaviours of a Dependency Property using `PropertyMetaData. Thus, overriding a metadata from a derived property will not require you to redefine or re-implement the entire property definition.
 
 ## AddOwner
 You can use AddOwner() to share types, defaults, metadata of a dependency property. If you Register the property every place you want to use it, and you change the definition you will have to track down and change all of them.
@@ -200,5 +200,5 @@ FrameworkPropertyMetadata – derives from UIPropertyMetadata and adds:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MTY4Njg1OV19
+eyJoaXN0b3J5IjpbLTkxMjMzNjkzOF19
 -->
