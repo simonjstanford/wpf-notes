@@ -68,7 +68,7 @@ Advantages of a Dependency Property Less memory consumption
 ## AddOwner
 You can use AddOwner() to share types, defaults, metadata of a dependency property. If you Register the property every place you want to use it, and you change the definition you will have to track down and change all of them.
 
-```cs
+```csharp
 public static readonly DependencyProperty BirthYearProperty =
     Person.BirthYearProperty.AddOwner(
         typeof(Dog),
@@ -107,7 +107,7 @@ public Person(string first, string last, int iq)
     LastName = last;
     SetValue(IQPropertyKey, 100);
 }
-
+```
 
 Overriding Dependency Properties in Derived Classes
 The metadata type must match the type in the original property (e.g. FrameworkPropertyMetadata, UIPropertyMetadata, or PropertyMetadata). Overriding the metadata in the child class doesn’t change the behavior of the dependency property in the parent class. The items that you do not specify (property changed, validation, coercion) will be inherited from the parent.
@@ -194,5 +194,5 @@ FrameworkPropertyMetadata – derives from UIPropertyMetadata and adds:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNzUwNDYyOF19
+eyJoaXN0b3J5IjpbLTg2Mzk3ODAyM119
 -->
