@@ -63,10 +63,10 @@ Advantages of a Dependency Property
 - Participation in animation, styles and templates - A Dependency Property can animate, set styles using style setters and even provide templates for the control.
 - CallBacks - Whenever a property is changed you can have a callback invoked.
 - Resources - You can define a Resource for the definition of a Dependency Property in XAML.
-- Overriding Metadata - You can define certain behaviours of a Dependency Property using `PropertyMetaData. Thus, overriding a metadata from a derived property will not require you to redefine or re-implement the entire property definition.
+- Overriding Metadata - You can define certain behaviours of a Dependency Property using `PropertyMetaData`. Thus, overriding a metadata from a derived property will not require you to redefine or re-implement the entire property definition.
 
 ## AddOwner
-You can use AddOwner() to share types, defaults, metadata of a dependency property. If you Register the property every place you want to use it, and you change the definition you will have to track down and change all of them.
+You can use `AddOwner()` to share types, defaults, metadata of a dependency property. If you Register the property every place you want to use it, and you change the definition you will have to track down and change all of them.
 
 ```csharp
 public static readonly DependencyProperty BirthYearProperty =
@@ -85,11 +85,11 @@ public int BirthYear
 public static void OnBirthYearChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 {
 }
+```
 
+## Read Only Dependency Properties
 
-Read Only Dependency Properties
-
-
+```csharp
 internal static readonly DependencyPropertyKey IQPropertyKey =
     DependencyProperty.RegisterReadOnly("IQ", typeof(int), typeof(Person), new PropertyMetadata(100));
 
@@ -111,7 +111,7 @@ public Person(string first, string last, int iq)
 
 ## Overriding Dependency Properties in Derived Classes
 
-The metadata type must match the type in the original property (e.g. FrameworkPropertyMetadata, UIPropertyMetadata, or PropertyMetadata). Overriding the metadata in the child class doesn’t change the behavior of the dependency property in the parent class. The items that you do not specify (property changed, validation, coercion) will be inherited from the parent.
+The metadata type must match the type in the original property (e.g. `FrameworkPropertyMetadata`, `UIPropertyMetadata`, or `PropertyMetadata`). Overriding the metadata in the child class doesn’t change the behavior of the dependency property in the parent class. The items that you do not specify (property changed, validation, coercion) will be inherited from the parent.
 
 ```csharp
 public class ThermometerSlider : Slider
@@ -136,7 +136,7 @@ public class ThermometerSlider : Slider
 }
 ```
 
-If this ButtonLoner object is defined in a Grid in XAML, it will automatically appear in Row 1, Col 1, rather than Row 0, Col 0.
+If this `ButtonLoner` object is defined in a Grid in XAML, it will automatically appear in Row 1, Col 1, rather than Row 0, Col 0.
 
 ```csharp
 public class ButtonLoner : Button
@@ -200,5 +200,5 @@ FrameworkPropertyMetadata – derives from UIPropertyMetadata and adds:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMjMzNjkzOF19
+eyJoaXN0b3J5IjpbLTMwMzUxOTQ5OV19
 -->
