@@ -136,7 +136,7 @@ public class ThermometerSlider : Slider
 }
 ```
 
-If this `ButtonLoner` object is defined in a Grid in XAML, it will automatically appear in Row 1, Col 1, rather than Row 0, Col 0.
+If this `ButtonLoner` object is defined in a `Grid` in XAML, it will automatically appear in Row 1, Col 1, rather than Row 0, Col 0.
 
 ```csharp
 public class ButtonLoner : Button
@@ -175,16 +175,14 @@ internal static readonly DependencyPropertyKey FriendsPropertyKey =
 
 ## Metadata
 
-When you implement a custom dependency property and you register the property by calling DependencyProperty.Register, you specify some metadata for the property by passing it an instance of PropertyMetadata. This can be an instance of the PropertyMetadata class or an instance of one of its subclasses. The differences are shown below.
+When you implement a custom dependency property and you register the property by calling `DependencyProperty.Register`, you specify some metadata for the property by passing it an instance of `PropertyMetadata`. This can be an instance of the `PropertyMetadata` class or an instance of one of its subclasses. The differences are shown below.
 
-PropertyMetadata – Basic metadata relating to dependency properties
-- CoerceValueCallback – coerce the value when being set
-- DefaultValue – a default value for the property
-- PropertyChangedCallback – respond to new effective value for the property
+`PropertyMetadata` – Basic metadata relating to dependency properties
+- `CoerceValueCallback` – coerce the value when being set
+- `DefaultValue` – a default value for the property
+- `PropertyChangedCallback` – respond to new effective value for the property
 
-
-
-UIPropertyMetadata – derives from PropertyMetadata and adds:
+`UIPropertyMetadata` – derives from `PropertyMetadata` and adds:
 - IsAnimationProhibited – disable animations for this property?
 
 
@@ -200,5 +198,5 @@ FrameworkPropertyMetadata – derives from UIPropertyMetadata and adds:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMzUxOTQ5OV19
+eyJoaXN0b3J5IjpbLTE1MzkzMTEyNjNdfQ==
 -->
