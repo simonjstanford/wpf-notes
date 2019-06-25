@@ -53,7 +53,7 @@ private static object OnAgeCoerceValue(DependencyObject depObj, object baseValue
 
 ## CLR Property vs. Dependency Property
 
-A CLR property reads directly from the private member of the class. The Get() and Set() methods of the class retrieve and store the values of the property. Whereas when you set a value of a Dependency Property it is not stored in a field of your object, but in a dictionary of keys and values provided by the base class DependencyObject. The key of an entry is the name of the property and the value is the value you want to set. Most people use dependency properties for user controls.
+A CLR property reads directly from the private member of the class. The `Get` and `Set` methods of the class retrieve and store the values of the property. Whereas when you set a value of a Dependency Property it is not stored in a field of your object, but in a dictionary of keys and values provided by the base class `DependencyObject`. The key of an entry is the name of the property and the value is the value you want to set. Most people use dependency properties for user controls.
 
 Advantages of a Dependency Property Less memory consumption
 
@@ -200,5 +200,5 @@ FrameworkPropertyMetadata – derives from UIPropertyMetadata and adds:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjEyOTE0MzNdfQ==
+eyJoaXN0b3J5IjpbLTk1MTY4Njg1OV19
 -->
