@@ -16,16 +16,16 @@ To make a tooltip partially transparent, you can set its Background property to 
 </Button>
 ```
 
-Several properties of the TooltipService class affect timing of tooltips displayed for a control.
+Several properties of the `TooltipService` class affect timing of tooltips displayed for a control.
 
-- InitialShowDelay – how long to wait after hovering over a control before popping up the tooltip (default is 0.4 secs)
-- ShowDuration – how long to show a tooltip before hiding it (assuming that you don’t move the mouse) (default is 5 secs)
-- BetweenShowDelay – how much time to allow for moving to another control when showing the tooltip on the second control without an initial delay (default is 0.1 secs)
+- `InitialShowDelay` – how long to wait after hovering over a control before popping up the tooltip (default is 0.4 secs)
+- `ShowDuration` – how long to show a tooltip before hiding it (assuming that you don’t move the mouse) (default is 5 secs)
+- `BetweenShowDelay` – how much time to allow for moving to another control when showing the tooltip on the second control without an initial delay (default is 0.1 secs)
 
 
-Tooltips aren't displayed for disabled controls. If you do want the tooltip to be displayed when the parent control is disabled, you can set the ToolTipService.ShowOnDisabled property to true.
+Tooltips aren't displayed for disabled controls. If you do want the tooltip to be displayed when the parent control is disabled, you can set the `ToolTipService.ShowOnDisabled` property to true.
 
-Change the ControlTemplate to have more control over how a ToolTip looks:
+Change the `ControlTemplate` to have more control over how a `ToolTip` looks:
 
 ```xml
 <Button Content="Caesar"
@@ -54,5 +54,5 @@ Change the ControlTemplate to have more control over how a ToolTip looks:
 </Button>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE3MjkxODkxXX0=
+eyJoaXN0b3J5IjpbMTk3NzgyNDE3Nyw1MTcyOTE4OTFdfQ==
 -->
