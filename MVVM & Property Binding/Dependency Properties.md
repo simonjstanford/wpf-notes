@@ -109,10 +109,11 @@ public Person(string first, string last, int iq)
 }
 ```
 
-Overriding Dependency Properties in Derived Classes
+## Overriding Dependency Properties in Derived Classes
+
 The metadata type must match the type in the original property (e.g. FrameworkPropertyMetadata, UIPropertyMetadata, or PropertyMetadata). Overriding the metadata in the child class doesn’t change the behavior of the dependency property in the parent class. The items that you do not specify (property changed, validation, coercion) will be inherited from the parent.
 
-
+```csharp
 public class ThermometerSlider : Slider
 {
     static ThermometerSlider()
@@ -133,10 +134,11 @@ public class ThermometerSlider : Slider
         ValueProperty.OverrideMetadata(typeof(ThermometerSlider), new FrameworkPropertyMetadata(70.0));
     }
 }
+```
 
 If this ButtonLoner object is defined in a Grid in XAML, it will automatically appear in Row 1, Col 1, rather than Row 0, Col 0.
 
-
+```csharp
 public class ButtonLoner : Button
 {
   static ButtonLoner()
@@ -145,7 +147,9 @@ public class ButtonLoner : Button
   Grid.ColumnProperty.OverrideMetadata(typeof(ButtonLoner), new FrameworkPropertyMetadata(1));
   }
 }
+```
 
+```xml
 <Grid>
     <Grid.RowDefinitions>
         <RowDefinition/>
@@ -157,18 +161,20 @@ public class ButtonLoner : Button
     </Grid.ColumnDefinitions>
     <app:ButtonLoner x:Name="btnLoner" Content="Loner" Width="100" Height="25"/>
 </Grid>
+```
 
+## Implementing a Dependency Property that's a collection
 
-Implementing a Dependency Property that's a collection
 You need to define the default value as a new instance of the collection. You are sharing the reference of the list not a new List instance. As a consequence all the items that are using this DP will shared the same collection.
 
-
+```csharp
 internal static readonly DependencyPropertyKey FriendsPropertyKey =
     DependencyProperty.RegisterReadOnly("Friends", typeof(List<Person>), typeof(Person),
       new PropertyMetadata(new List<Person>()));      // Metadata constructor instantiates a new List
+```
 
+## Metadata
 
-Metadata
 When you implement a custom dependency property and you register the property by calling DependencyProperty.Register, you specify some metadata for the property by passing it an instance of PropertyMetadata. This can be an instance of the PropertyMetadata class or an instance of one of its subclasses. The differences are shown below.
 
 PropertyMetadata – Basic metadata relating to dependency properties
@@ -194,5 +200,5 @@ FrameworkPropertyMetadata – derives from UIPropertyMetadata and adds:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2Mzk3ODAyM119
+eyJoaXN0b3J5IjpbLTE4MjEyOTE0MzNdfQ==
 -->
