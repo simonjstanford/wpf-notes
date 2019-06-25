@@ -1,6 +1,6 @@
 # Visual State Manager
 
-Use visual state to switch between different states of a control. This control uses Visual State Manager to switch between displaying one of two different panels using the IsFlipped property and VisualStateManager.GoToState().
+Use visual state to switch between different states of a control. This control uses Visual State Manager to switch between displaying one of two different panels using the `IsFlipped` property and `VisualStateManager.GoToState()`.
 
 
 ```csharp
@@ -140,7 +140,7 @@ namespace CustomControls
 }
 ```
 
-This is the default template for the control. It uses two content presenter objects - one for each panel that can be visible. There is some duplication in code - VisualTransition.GeneratedDuration must be set even though a custom Storyboard animation is defined. Without this, the new state is displayed immediately. 
+This is the default template for the control. It uses two content presenter objects - one for each panel that can be visible. There is some duplication in code - `VisualTransition.GeneratedDuration` must be set even though a custom Storyboard animation is defined. Without this, the new state is displayed immediately. 
 
 ```xml
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation";
@@ -255,7 +255,7 @@ To use the default transformation when changing between all states you can just 
 <VisualTransition GeneratedDuration="0:0:0.7"/>
 ```
 
-Or you can use the default transformation with different settings you can use several VisualTransition objects with different to/from/generated duration values:
+Or you can use the default transformation with different settings you can use several `VisualTransition` objects with different to/from/generated duration values:
 
 ```xml
 <VisualStateGroup.Transitions>
@@ -309,5 +309,6 @@ You then use the control like this:
 </lib:FlipPanel>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTU5NDg0NjFdfQ==
+eyJoaXN0b3J5IjpbLTIwMjE5Nzk1NjUsLTEzMTU5NDg0NjFdfQ
+==
 -->
