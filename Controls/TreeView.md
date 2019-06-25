@@ -1,6 +1,6 @@
 # TreeView
 
-You can bind to a DataRelation object when working with DataTables to display hierarchical data:
+You can bind to a `DataRelation` object when working with `DataTables` to display hierarchical data:
 
 ```csharp
 SqlConnection con = new SqlConnection(connectionString);
@@ -38,5 +38,5 @@ treeCategories.ItemsSource = ds.Tables["Categories"].DefaultView;
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUyNjExNjNdfQ==
+eyJoaXN0b3J5IjpbLTE1OTU2MTIyNTUsNTUyNjExNjNdfQ==
 -->
