@@ -5,13 +5,13 @@ The `UpdateSourceTrigger` has events like lostfocus , property change etc. In ot
 
 ![Iproperty1](../media/IPropertyNotifyChanged1.png)
 
-So it’s very much possible that the WPF source data has changed and because the WPF target `UpdateSourceTrigger` event did not fire he did not make a pull and the data of the source is not in sync with the target. This is where “INotifyPropertyChanged” interface comes to use.
+So it’s very much possible that the WPF source data has changed and because the WPF target `UpdateSourceTrigger` event did not fire he did not make a pull and the data of the source is not in sync with the target. This is where `INotifyPropertyChanged` interface comes to use.
 
 ![Iproperty2](../media/IPropertyNotifyChanged2.png)
 
-Below is a simple “clsCounter” class which has a “Counter” property and this property is incremented by “Increment” method.
+Below is a simple “clsCounter” class which has a `Counter` property and this property is incremented by `Increment` method.
 
-Now if we bind WPF label or textbox to the “Counter” property and call the “Increment” method the new “Counter” value will not be propagated to the target. Because invoking a method does not trigger any “UpdateSourceTrigger” event.
+Now if we bind WPF label or textbox to the `Counter” property and call the “Increment” method the new “Counter” value will not be propagated to the target. Because invoking a method does not trigger any “UpdateSourceTrigger” event.
 
 So after calling the “Increment” method the “Counter” value of the source and the target are out of synch.
 
@@ -41,6 +41,6 @@ public class clsCounter : INotifyPropertyChanged
   }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMTU5NjA1Myw0MzEzNDYyNSwtOTYyMz
-U3MTYxXX0=
+eyJoaXN0b3J5IjpbLTEzMzc3OTk1OTgsNDMxMzQ2MjUsLTk2Mj
+M1NzE2MV19
 -->
