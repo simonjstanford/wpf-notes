@@ -82,7 +82,7 @@ And it's used like this:
 <lib:CustomDrawnElement BackgroundColor="{Binding ElementName=lstColors,Path=SelectedItem.Content}"/>
 ```
 
-Alternatively, you can make the above control into a decorator. This can be used in multiple controls. You also need to override the Measure method so you can handle the placement of the control's children, e.g. when you need to reserve some space in the control for the graphical content you're adding.
+Alternatively, you can make the above control into a decorator. This can be used in multiple controls. You also need to override the `Measure` method so you can handle the placement of the control's children, e.g. when you need to reserve some space in the control for the graphical content you're adding.
 
 ```csharp
 using System.Windows;
@@ -187,5 +187,5 @@ And then it can be used in a control template:
 <Button Template="{StaticResource ButtonWithCustomChrome}">Test Custom</Button>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NTYzMjExNV19
+eyJoaXN0b3J5IjpbNzQ2NDA2MzkxLDE0NDU2MzIxMTVdfQ==
 -->
