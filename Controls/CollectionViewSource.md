@@ -189,7 +189,7 @@ In code, we add a handler for the `Filter` event of the `CollectionViewSource`. 
 ((CollectionViewSource)this.Resources["cvsActors"]).Filter += ActorList_Filter;
 ```
 
-In the handler, we set the Accepted property of the argument if the item should be included in the list.
+In the handler, we set the `Accepted` property of the argument if the item should be included in the list.
 
 ```csharp
 void ActorList_Filter(object sender, FilterEventArgs e)
@@ -260,5 +260,6 @@ Like sorting, filtering in a CollectionViewSource is not automatically done when
 </CollectionViewSource>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYzOTcyNzkzLDE2MTQ0NDU4MV19
+eyJoaXN0b3J5IjpbLTE2NTQ5MTU4MDEsODYzOTcyNzkzLDE2MT
+Q0NDU4MV19
 -->
