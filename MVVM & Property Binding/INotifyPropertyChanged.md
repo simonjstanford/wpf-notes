@@ -1,7 +1,7 @@
 # INotifyPropertyChanged
 
-When we bind two WPF objects the target data is updated depending on the “UpdateSourceTrigger” events. Please refer the previous question for “UpdateSourceTrigger” basics.
-The “UpdateSourceTrigger” has events like lostfocus , property change etc. In other words when lostfocus or property change event happen on the target it makes a PULL to the source to get the latest data.
+When we bind two WPF objects the target data is updated depending on the `UpdateSourceTrigger` events. Please refer the previous question for `UpdateSourceTrigger` basics.
+The `UpdateSourceTrigger` has events like lostfocus , property change etc. In other words when lostfocus or property change event happen on the target it makes a PULL to the source to get the latest data.
 
 
 
@@ -42,5 +42,5 @@ public class clsCounter : INotifyPropertyChanged
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk4NjcwODk2XX0=
+eyJoaXN0b3J5IjpbLTk2MjM1NzE2MV19
 -->
