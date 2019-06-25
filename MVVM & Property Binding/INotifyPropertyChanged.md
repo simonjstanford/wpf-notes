@@ -3,11 +3,11 @@
 When we bind two WPF objects the target data is updated depending on the `UpdateSourceTrigger` events. Please refer the previous question for `UpdateSourceTrigger` basics.
 The `UpdateSourceTrigger` has events like lostfocus , property change etc. In other words when lostfocus or property change event happen on the target it makes a PULL to the source to get the latest data.
 
-
+![Iproperty1](../media/IPropertyNotifyChanged1.png)
 
 So it’s very much possible that the WPF source data has changed and because the WPF target “UpdateSourceTrigger” event did not fire he did not make a pull and the data of the source is not in synch with the target. This is where “INotifyPropertyChanged” interface comes to use.
 
-
+![Iproperty2](../media/IPropertyNotifyChanged2.png)
 
 Below is a simple “clsCounter” class which has a “Counter” property and this property is incremented by “Increment” method.
 
@@ -42,5 +42,5 @@ public class clsCounter : INotifyPropertyChanged
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MjM1NzE2MV19
+eyJoaXN0b3J5IjpbNDMxMzQ2MjUsLTk2MjM1NzE2MV19
 -->
