@@ -5,7 +5,7 @@ The `UpdateSourceTrigger` has events like lostfocus , property change etc. In ot
 
 ![Iproperty1](../media/IPropertyNotifyChanged1.png)
 
-So it’s very much possible that the WPF source data has changed and because the WPF target “UpdateSourceTrigger” event did not fire he did not make a pull and the data of the source is not in synch with the target. This is where “INotifyPropertyChanged” interface comes to use.
+So it’s very much possible that the WPF source data has changed and because the WPF target `UpdateSourceTrigger` event did not fire he did not make a pull and the data of the source is not in sync with the target. This is where “INotifyPropertyChanged” interface comes to use.
 
 ![Iproperty2](../media/IPropertyNotifyChanged2.png)
 
@@ -19,7 +19,7 @@ So create a push event from the source you need to first implement “INotifyPro
 
 In simple words the source sends a notification to the target WPF object that data has changed in the source and he should refresh himself with the fresh data.
 
-
+```csharp
 public class clsCounter : INotifyPropertyChanged
 {
 
@@ -39,8 +39,8 @@ public class clsCounter : INotifyPropertyChanged
 
         public event PropertyChangedEventHandler PropertyChanged;
   }
-
-
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMxMzQ2MjUsLTk2MjM1NzE2MV19
+eyJoaXN0b3J5IjpbMTczMTU5NjA1Myw0MzEzNDYyNSwtOTYyMz
+U3MTYxXX0=
 -->
