@@ -15,7 +15,7 @@ Now if we bind WPF label or textbox to the `Counter` property and call the `Incr
 
 So after calling the `Increment` method the `Counter` value of the source and the target are out of sync.
 
-So create a push event from the source you need to first implement `INotifyPropertyChanged` interface as shown in the below figure. Now when someone calls the “Increment” method you can raise an event saying that the “Counter” property has changed by calling “PropertyChanged” function as shown in the below code.
+So create a push event from the source you need to first implement `INotifyPropertyChanged` interface as shown in the below figure. Now when someone calls the `Increment` method you can raise an event saying that the `Counter` property has changed by calling `PropertyChanged` function as shown in the below code.
 
 In simple words the source sends a notification to the target WPF object that data has changed in the source and he should refresh himself with the fresh data.
 
@@ -41,6 +41,6 @@ public class clsCounter : INotifyPropertyChanged
   }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NzczMjA4LDQzMTM0NjI1LC05NjIzNT
-cxNjFdfQ==
+eyJoaXN0b3J5IjpbLTE4NTc1MTM1NTUsNDMxMzQ2MjUsLTk2Mj
+M1NzE2MV19
 -->
