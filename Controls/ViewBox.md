@@ -23,16 +23,16 @@ A `ViewBox` is typically used to scale a panel containing other elements. One co
 </DockPanel>
 ```
 
-By default, content scaled by using a `ViewBox` will preserve its aspect ratio as it is being scaled. Content is scaled until its size fills its container in one dimension. White borders are added in the other dimension. This default behavior corresponds to setting the `Stretch` property of the `ViewBox` to `Uniform`. If we set `Stretch` to `Fill`, the content always fills the available area and the aspect ratio is not preserved. That is, content is stretched more in one direction than in another. Setting the `Stretch property to UniformToFill preserves the aspect ratio, but content stretches until it fills the container in both dimensions. If the aspect ratio of the container is different than that of the content, content is clipped. Finally, setting Stretch to None disables all scaling.
+By default, content scaled by using a `ViewBox` will preserve its aspect ratio as it is being scaled. Content is scaled until its size fills its container in one dimension. White borders are added in the other dimension. This default behavior corresponds to setting the `Stretch` property of the `ViewBox` to `Uniform`. If we set `Stretch` to `Fill`, the content always fills the available area and the aspect ratio is not preserved. That is, content is stretched more in one direction than in another. Setting the `Stretch` property to `UniformToFill` preserves the aspect ratio, but content stretches until it fills the container in both dimensions. If the aspect ratio of the container is different than that of the content, content is clipped. Finally, setting `Stretch` to `None` disables all scaling.
 
-You can change this behavior by setting the StretchDirection of the ViewBox to one of the following values:
+You can change this behavior by setting the `StretchDirection` of the `ViewBox` to one of the following values:
 
-- Both (the default) – allow scaling both up and down, relative to the default size of the content
-- UpOnly – Only allow scaling larger than default size of content
-- DownOnly – Only allow scaling smaller than default size of content
+- `Both` (the default) – allow scaling both up and down, relative to the default size of the content
+- `UpOnly` – Only allow scaling larger than default size of content
+- `DownOnly` – Only allow scaling smaller than default size of content
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MzQ5NDc0OSwxNjgzMzU3NTM3XX0=
+eyJoaXN0b3J5IjpbMTM0MDQ0NzI3OSwxNjgzMzU3NTM3XX0=
 -->
