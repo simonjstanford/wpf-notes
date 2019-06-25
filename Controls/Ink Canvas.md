@@ -21,7 +21,7 @@ The `InkCanvas` control has an `EditingMode` property that allows you to change 
 
 `EditingMode` can take on one of the following values:
 
-- `None – You can’t drawn on the InkCanvas at all
+- `None` – You can’t drawn on the `InkCanvas` at all
 - `Ink` – You can draw strokes, using a mouse or stylus
 - `GestureOnly` – Responds to gestures, does not allow drawing. Used to let the user draw a shape and then the application tries to determine the shape they drew, e.g. circle, square. 
 - `InkAndGesture` – Responds to gestures, or allows drawing
@@ -31,7 +31,7 @@ The `InkCanvas` control has an `EditingMode` property that allows you to change 
 
 
 ## Style
-You can specify a number of different drawing attributes that affect how new strokes appear when drawing on an InkCanvas control. You set the `DefaultDrawingAttributes` property of the `InkCanvas` to an instance of the `DrawingAttributes` class, which contains properties that you can set to change how new strokes appear.
+You can specify a number of different drawing attributes that affect how new strokes appear when drawing on an `InkCanvas` control. You set the `DefaultDrawingAttributes` property of the `InkCanvas` to an instance of the `DrawingAttributes` class, which contains properties that you can set to change how new strokes appear.
 
 You can modify the style of existing strokes by changing the instance of the `DrawingAttributes` class associated with the desired object in the `InkCanvas.Strokes` collection.
 
@@ -49,5 +49,5 @@ Properties of `DrawingAttributes` include:
 https://wpf.2000things.com/2012/02/07/489-using-the-inkcanvas-to-recognize-gestures-part-i/
 https://wpf.2000things.com/2012/02/08/490-using-the-inkcanvas-to-recognize-gestures-part-ii/
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Nzk2MzcwMTVdfQ==
+eyJoaXN0b3J5IjpbMTE4MTYzMzgyMywtMTU3OTYzNzAxNV19
 -->
