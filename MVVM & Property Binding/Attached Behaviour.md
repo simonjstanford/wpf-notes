@@ -1,6 +1,6 @@
 # Attached Behaviour
 
-```csharp
+```xml
 behaviours:ExpanderBehaviour.ExpandedCommand="{Binding MainWindow.SelectedTab.ExpandedRegulationCommand, Source={StaticResource Locator}}"
 
 behaviours:ExpanderBehaviour.CollapsedCommand="{Binding MainWindow.SelectedTab.CollapsedRegulationCommand, Source={StaticResource Locator}}"
@@ -9,7 +9,7 @@ behaviours:ExpanderBehaviour.Parameter="{Binding RegulationType, Mode=OneWay}"
 ```
 
 
-
+```csharp
 public static class ExpanderBehaviour
 {
     #region Parameter
@@ -105,6 +105,8 @@ public static class ExpanderBehaviour
     }
     #endregion
 }
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1OTMzMzQ5N119
+eyJoaXN0b3J5IjpbLTE5OTI2MzU2NzJdfQ==
 -->
