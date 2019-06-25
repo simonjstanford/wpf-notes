@@ -246,7 +246,7 @@ Note that the data object being bound to must implement `INotifyPropertyChanged`
 ```
 
 ## Live Filtering
-Like sorting, filtering in a CollectionViewSource is not automatically done when you change the contents of one of the data bound items. By default, you need to call the Refresh method of the CollectionViewSource. You can fix this by adding the FirstName property to the LiveFilteringProperties collection of the CollectionViewSource and setting IsLiveFilteringRequested to true.
+Like sorting, filtering in a `CollectionViewSource` is not automatically done when you change the contents of one of the data bound items. By default, you need to call the `Refresh` method of the `CollectionViewSource`. You can fix this by adding the `FirstName` property to the `LiveFilteringProperties` collection of the `CollectionViewSource` and setting `IsLiveFilteringRequested` to true.
 
 ```xml
 <CollectionViewSource x:Key="cvsActors" Source="{Binding ActorList}"
@@ -260,6 +260,6 @@ Like sorting, filtering in a CollectionViewSource is not automatically done when
 </CollectionViewSource>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTQ5MTU4MDEsODYzOTcyNzkzLDE2MT
-Q0NDU4MV19
+eyJoaXN0b3J5IjpbLTcyMzUwMzY3LDg2Mzk3Mjc5MywxNjE0ND
+Q1ODFdfQ==
 -->
