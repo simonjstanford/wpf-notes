@@ -7,7 +7,7 @@ There are three types of WPF events:
 - Bubbling events: events that travel up the visual tree hierarchy looking for handlers, e.g.` MouseDown` is a bubbling event.
 - Tunneling events: events that travel down the visual tree hierarchy looking for handlers . e.g. `PreviewKeyDown`.
 
-
+![Routed Events](../media/RoutedEvents.png)
 
 https://wpftutorial.net/RoutedEvents.html
 
@@ -85,5 +85,6 @@ public event RoutedEventHandler Selected
 RaiseEvent(new RoutedEventArgs(MyCustomControl.SelectedEvent));
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg4NDEzMDg4LDkzMDIxOTUwMl19
+eyJoaXN0b3J5IjpbLTU5NDkzMDcxNSw5ODg0MTMwODgsOTMwMj
+E5NTAyXX0=
 -->
