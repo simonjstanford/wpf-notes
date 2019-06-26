@@ -3,7 +3,7 @@
 Routed events travel up and down the visual tree hierarchy. The Visual tree hierarchy is the logical XAML tree hierarchy that has been converted into the objects that are displayed on the screen. Routed events invoke handlers on multiple listeners in an element tree, rather than just on the object that raised the event. They are CLR events that are backed by an instance of the `RoutedEvent` class and is processed by the WPF event system.
 
 There are three types of WPF events:
-- Direct events: event is raised by the source and handled at the source, like MouseEnter events.
+- Direct events: event is raised by the source and handled at the source, like `MouseEnter` events.
 - Bubbling events: events that travel up the visual tree hierarchy looking for handlers, e.g. MouseDown is a bubbling event.
 - Tunneling events: events that travel down the visual tree hierarchy looking for handlers . e.g. PreviewKeyDown.
 
@@ -87,5 +87,5 @@ public event RoutedEventHandler Selected
 RaiseEvent(new RoutedEventArgs(MyCustomControl.SelectedEvent));
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMwMjE5NTAyXX0=
+eyJoaXN0b3J5IjpbMTEyNDM5Mjg3Miw5MzAyMTk1MDJdfQ==
 -->
