@@ -3,7 +3,6 @@
 https://wpf.2000things.com/2012/07/17/604-defining-a-new-routed-event/
 
 ```csharp
-
 public class MyButton : Button
 {
 	public static readonly RoutedEvent RightDragEvent;
@@ -30,10 +29,8 @@ public class MyButton : Button
 	    if (e.RightButton == MouseButtonState.Pressed)
 	        OnRightDrag();
 	}
-
 }
-
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNjkzNjQ4Nl19
+eyJoaXN0b3J5IjpbLTgzNDU5ODEyNCwxMjM2OTM2NDg2XX0=
 -->
