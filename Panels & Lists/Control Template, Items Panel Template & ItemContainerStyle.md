@@ -1,8 +1,8 @@
 # Control Template, Items Panel Template & ItemContainerStyle
 
-ControlTemplate defines the appearance of the control:
+`ControlTemplate` defines the appearance of the control:
 
-
+```xml
 <Grid.Resources>
     <ControlTemplate x:Key="RoundButtonTemplate">
         <Grid>
@@ -12,11 +12,11 @@ ControlTemplate defines the appearance of the control:
 </Grid.Resources>
 
 <Button Template="{StaticResource RoundButtonTemplate}" >OK</Button>
+```
 
+`ItemsPanelTemplate` is used to change the layout of items of an `ItemsControl`. This isn't the `DataTemplate` of the items, how how all the items are set out:
 
-ItemsPanelTemplate is used to change the layout of items of an ItemsControl. This isn't the DataTemplate of the items, how how all the items are set out:
-
-
+```xml
 <Window x:Class="WpfTutorialSamples.ItemsControl.ItemsControlPanelSample"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -44,11 +44,11 @@ ItemsPanelTemplate is used to change the layout of items of an ItemsControl. Thi
                 </ItemsControl>
         </Grid>
 </Window>
+```
 
+You can also use the `ItemContainerStyle` to set properties for each item container. Note that in the example below you can't just add the `Column` and `Row` properties to the label because when it is rendered it is wrapped in a content presenter element - it is the content presenter that the grid tries to read the row/column properties from. https://wpf.2000things.com/2011/12/21/455-using-itemcontainerstyle-to-bind-data-elements-in-a-collection-to-a-grid/
 
-You can also use the ItemContainerStyle to set properties for each item container. Note that in the example below you can't just add the Column and Row properties to the label because when it is rendered it is wrapped in a content presenter element - it is the content presenter that the grid tries to read the row/column properties from. https://wpf.2000things.com/2011/12/21/455-using-itemcontainerstyle-to-bind-data-elements-in-a-collection-to-a-grid/
-
-
+```xml
 <ItemsControl ItemsSource="{Binding ChessPieces}" Height="500" Width="500">
     <ItemsControl.ItemsPanel>
         <ItemsPanelTemplate>
@@ -76,7 +76,7 @@ You can also use the ItemContainerStyle to set properties for each item containe
         </Style>
     </ItemsControl.ItemContainerStyle>
 </ItemsControl>
-
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMzI2Njc5N119
+eyJoaXN0b3J5IjpbLTEzNTk2MTU0MTZdfQ==
 -->
