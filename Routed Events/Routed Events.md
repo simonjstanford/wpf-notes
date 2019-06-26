@@ -4,14 +4,12 @@ Routed events travel up and down the visual tree hierarchy. The Visual tree hier
 
 There are three types of WPF events:
 - Direct events: event is raised by the source and handled at the source, like `MouseEnter` events.
-- Bubbling events: events that travel up the visual tree hierarchy looking for handlers, e.g. MouseDown is a bubbling event.
-- Tunneling events: events that travel down the visual tree hierarchy looking for handlers . e.g. PreviewKeyDown.
+- Bubbling events: events that travel up the visual tree hierarchy looking for handlers, e.g.` MouseDown` is a bubbling event.
+- Tunneling events: events that travel down the visual tree hierarchy looking for handlers . e.g. `PreviewKeyDown`.
 
 
 
 https://wpftutorial.net/RoutedEvents.html
-
-
 
 ```xml
 <Window x:Class="WpfApp1.MainWindow"
@@ -87,5 +85,5 @@ public event RoutedEventHandler Selected
 RaiseEvent(new RoutedEventArgs(MyCustomControl.SelectedEvent));
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNDM5Mjg3Miw5MzAyMTk1MDJdfQ==
+eyJoaXN0b3J5IjpbOTg4NDEzMDg4LDkzMDIxOTUwMl19
 -->
