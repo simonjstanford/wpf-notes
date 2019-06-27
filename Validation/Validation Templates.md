@@ -31,10 +31,7 @@ change in the layout of the original window.
 </Style>
 ```
 
-Another example, this time setting the validation template to null and using triggers to change the colour of an existing border when there is a validation error: 
-
-
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NTUzNTgzOV19
+eyJoaXN0b3J5IjpbLTc4MjM4OTczMiwtNTU1NTM1ODM5XX0=
 -->
