@@ -91,10 +91,10 @@ And to use `MultiTrigger` inside a `DataTrigger`:
 </Style >
 ```
 
-There's also `MultiTrigger` and MultiDataTrigger where all properties have to be true.
+There's also `MultiTrigger` and `MultiDataTrigger` where all properties have to be true.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDIxNjQyOTJdfQ==
+eyJoaXN0b3J5IjpbMTQ0ODM4MjIxNF19
 -->
