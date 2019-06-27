@@ -41,61 +41,60 @@ And to use `MultiTrigger` inside a `DataTrigger`:
 
 ```xml
 <MultiDataTrigger>
-                                <MultiDataTrigger.Conditions>
-                                    <Condition Value="True">
-                                        <Condition.Binding>
-                                            <MultiBinding Converter="{StaticResource ReferenceEqualsConverter}">
-                                                <Binding Path="DataContext" RelativeSource="{RelativeSource Self}" />
-                                                <Binding Path="SelectedItem" ElementName="root" />
-                                            </MultiBinding>
-                                        </Condition.Binding>
-                                    </Condition>
-                                </MultiDataTrigger.Conditions>
+<MultiDataTrigger.Conditions>
+    <Condition Value="True">
+        <Condition.Binding>
+            <MultiBinding Converter="{StaticResource ReferenceEqualsConverter}">
+                <Binding Path="DataContext" RelativeSource="{RelativeSource Self}" />
+                <Binding Path="SelectedItem" ElementName="root" />
+            </MultiBinding>
+        </Condition.Binding>
+    </Condition>
+</MultiDataTrigger.Conditions>
+    <Setter TargetName="Bd" Property="Background" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>
+</MultiDataTrigger>
+```
 
+## ControlTemplate Triggers
 
-                                <Setter TargetName="Bd" Property="Background" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
-                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrushKey}}"/>
-                            </MultiDataTrigger>
-
-
-ControlTemplate Triggers:
-
-
+```xml
 <!--Defines the circular button used to merge/split panel rows and add/remove rows-->
-    <Style x:Key ="RoundButton" TargetType="{ x:Type Button}">
-        <Setter Property ="Foreground" Value="White" />
-        <Setter Property ="FontWeight" Value="Bold" />
-        <Setter Property ="Height" Value="17" />
-        <Setter Property ="Width" Value="17" />
+<Style x:Key ="RoundButton" TargetType="{ x:Type Button}">
+    <Setter Property ="Foreground" Value="White" />
+    <Setter Property ="FontWeight" Value="Bold" />
+    <Setter Property ="Height" Value="17" />
+    <Setter Property ="Width" Value="17" />
 
-        <Setter Property ="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType ="Button">
-                    <Grid>
-                        <Ellipse x :Name="buttonCircle" Stroke="Black" StrokeThickness="2" Fill="Black"/>
-                        <ContentPresenter HorizontalAlignment ="Center" VerticalAlignment="Center"/>
-                    </Grid>
+    <Setter Property ="Template">
+        <Setter.Value>
+            <ControlTemplate TargetType ="Button">
+                <Grid>
+                    <Ellipse x :Name="buttonCircle" Stroke="Black" StrokeThickness="2" Fill="Black"/>
+                    <ContentPresenter HorizontalAlignment ="Center" VerticalAlignment="Center"/>
+                </Grid>
 
-                    <ControlTemplate.Triggers>
-                        <Trigger Property ="IsEnabled" Value="false">
-                            <Setter Property ="Fill" TargetName="buttonCircle" Value="Gray"/>
-                            <Setter Property ="Stroke" TargetName="buttonCircle" Value="Gray"/>
-                        </Trigger>
+                <ControlTemplate.Triggers>
+                    <Trigger Property ="IsEnabled" Value="false">
+                        <Setter Property ="Fill" TargetName="buttonCircle" Value="Gray"/>
+                        <Setter Property ="Stroke" TargetName="buttonCircle" Value="Gray"/>
+                    </Trigger>
 
-                        <Trigger Property ="IsMouseOver" Value="true">
-                            <Setter Property ="Fill" TargetName="buttonCircle" Value="Red"/>
-                            <Setter Property ="Stroke" TargetName="buttonCircle" Value="Red"/>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style >
+                    <Trigger Property ="IsMouseOver" Value="true">
+                        <Setter Property ="Fill" TargetName="buttonCircle" Value="Red"/>
+                        <Setter Property ="Stroke" TargetName="buttonCircle" Value="Red"/>
+                    </Trigger>
+                </ControlTemplate.Triggers>
+            </ControlTemplate>
+        </Setter.Value>
+    </Setter>
+</Style >
+```
 
-There's also MultiTrigger and MultiDataTrigger where all properties have to be true.
+There's also `MultiTrigger` and MultiDataTrigger where all properties have to be true.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA0MDA0OTAxXX0=
+eyJoaXN0b3J5IjpbLTE4MDIxNjQyOTJdfQ==
 -->
