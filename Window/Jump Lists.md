@@ -110,7 +110,9 @@ namespace JumpListApplicationTask
 }
 ```
 
+Also see https://github.com/simonjstanford/wpf-jumplist
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxODQzNTI5Ml19
+eyJoaXN0b3J5IjpbLTM1Nzg2NzgxNCwxNDE4NDM1MjkyXX0=
 -->
