@@ -110,9 +110,9 @@ namespace JumpListApplicationTask
 }
 ```
 
-Also see https://github.com/simonjstanford/wpf-jumplist
+Also see [https://github.com/simonjstanford/wpf-taskbar-jumplist](https://github.com/simonjstanford/wpf-taskbar-jumplist)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1Nzg2NzgxNCwxNDE4NDM1MjkyXX0=
+eyJoaXN0b3J5IjpbLTcyODU0MTE5OSwxNDE4NDM1MjkyXX0=
 -->
