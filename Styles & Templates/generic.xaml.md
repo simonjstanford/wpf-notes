@@ -38,6 +38,8 @@ Reference the assembly in a WPF project and then use the resource. You can eithe
 <TextBlock Text="Hello, World!" Foreground="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type res:CustomResources}, ResourceId=CustomColour}}" />
 <TextBlock Text="Hello, World!" Foreground="{DynamicResource {x:Static res:CustomResources.CustomColour}}" />
 ```
+
+See https://github.com/simonjstanford/wpf-genericstyle
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMzk1NDE0XX0=
+eyJoaXN0b3J5IjpbLTE3ODkwODk2OTMsMTgyMzk1NDE0XX0=
 -->
