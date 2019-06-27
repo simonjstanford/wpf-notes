@@ -1,7 +1,7 @@
 # Alternating ListBoxItem Styles
 
 
-
+```xml
 <ListBox Name="lstProducts" Margin="5" DisplayMemberPath="ModelName"
         AlternationCount="2">
     <ListBox.ItemContainerStyle>
@@ -25,5 +25,5 @@
 </ListBox>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjY3NDQyNDVdfQ==
+eyJoaXN0b3J5IjpbNjEyNTM1MDQyXX0=
 -->
