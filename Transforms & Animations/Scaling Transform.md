@@ -11,23 +11,26 @@ To flip an element horizontally, you use a `ScaleTransform` with a `ScaleX` valu
 ```xml
 <StackPanel Orientation="Vertical">
   <Button Content="Push Me" HorizontalAlignment="Center" Padding="10,5" Margin="5"/>
+  
   <Button Content="Push Me" HorizontalAlignment="Center" Padding="10,5" Margin="5">
-  <Button.LayoutTransform>
-  <ScaleTransform ScaleX="2.0"/>
-  </Button.LayoutTransform>
+	  <Button.LayoutTransform>
+	  <ScaleTransform ScaleX="2.0"/>
+	  </Button.LayoutTransform>
   </Button>
+  
   <Button Content="Push Me" HorizontalAlignment="Center" Padding="10,5" Margin="5">
-  <Button.LayoutTransform>
-  <ScaleTransform ScaleY="2.0"/>
-  </Button.LayoutTransform>
+	  <Button.LayoutTransform>
+	  <ScaleTransform ScaleY="2.0"/>
+	  </Button.LayoutTransform>
   </Button>
+  
   <Button Content="Push Me" HorizontalAlignment="Center" Padding="10,5" Margin="5">
-  <Button.LayoutTransform>
-  <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
-  </Button.LayoutTransform>
+	  <Button.LayoutTransform>
+	  <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+	  </Button.LayoutTransform>
   </Button>
 </StackPanel>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU2NDAxNTkyXX0=
+eyJoaXN0b3J5IjpbMjAyODgzODM5OF19
 -->
