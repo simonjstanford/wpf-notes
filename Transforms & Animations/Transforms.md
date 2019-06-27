@@ -14,7 +14,6 @@ When you are transforming user interface elements using a 2D transform, you can 
 - A `LayoutTransform` transforms elements before they are laid out by the parent panel
 - A `RenderTransform` transforms element after they are laid out by the parent panel (but before they are rendered)
 
-
 The difference between these two types seems to be spacing of elements. Which one you use depends on whether you want transform and then lay out (use `LayoutTransform`) or to lay out and then transform (use `RenderTransform`). 
 
 A render transform has better performance than a layout transform. This is especially apparent when you are animating a transform. Whenever a layout transform changes, the panel containing the element that is being transformed needs to recalculate the layout of the children within the panel. With a render transform, by contrast, the element only needs to be re-rendered. Because of the additional layout step, a layout transform is more compute intensive than a render transform.
@@ -23,20 +22,23 @@ You can combine multiple transforms by setting the property to an instance of a 
 
 ```xml
 <StackPanel>
-  <Label Content="We few, we happy few, we band of brothers" Style="{StaticResource styRoyal}"/>
+  <Label Content="We few, we happy few, we band of brothers" 
+		 Style="{StaticResource styRoyal}"/>
+
   <Label Content="For he to-day that sheds his blood with me"
-  Style="{StaticResource styRoyal}">
-  <Label.RenderTransform>
-  <TransformGroup>
-  <RotateTransform Angle="20" />
-  <TranslateTransform X="50" />
-  </TransformGroup>
-  </Label.RenderTransform>
+		 Style="{StaticResource styRoyal}">
+	  <Label.RenderTransform>
+		  <TransformGroup>
+			  <RotateTransform Angle="20" />
+			  <TranslateTransform X="50" />
+		  </TransformGroup>
+	  </Label.RenderTransform>
   </Label>
+  
   <Label Content="Shall be my brother; be he ne'er so vile"
-  Style="{StaticResource styRoyal}"/>
+		 Style="{StaticResource styRoyal}"/>
 </StackPanel>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTM3OTU4NTVdfQ==
+eyJoaXN0b3J5IjpbLTExODM3OTczNjddfQ==
 -->
