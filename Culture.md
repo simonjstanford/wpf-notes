@@ -26,12 +26,12 @@ public MainWindow()
 
 This mechanism won’t, however, honor any custom formatting that you specify in the Region applet. A custom format is anything that you change from the defaults in the Region applet. If you want the data binding engine to completely respect all of the settings chosen in the Region applet, you can set the `ConverterCulture` property to the `CurrentCulture`, for each binding:
 
-
+```xml
 xmlns:glob="clr-namespace:System.Globalization;assembly=mscorlib"
 <TextBlock Text="{Binding BoundDate, ConverterCulture={x:Static glob:CultureInfo.CurrentCulture}}"/>
-
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMzQzMDE4M119
+eyJoaXN0b3J5IjpbLTM4ODY4MTk1Nl19
 -->
