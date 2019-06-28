@@ -47,12 +47,12 @@ WPF controls can be categorized in to four categories:-
 ![Intro2](../media/Intro2.png)
 
 - `Object`: - As WPF is created using .NET so the first class from which WPF UI classes inherits is the .NET object class.
-- Dispatcher: - This class ensures that all WPF UI objects can be accessed directly only by the thread who own him. Other threads who do not own him have to go via the dispatcher object.
-- Dependency: - WPF UI elements are represented by using XAML which is XML format. At any given moment of time a WPF element is surrounded by other WPF elements and the surrounded elements can influence this element and this is possible because of this dependency class. For example if a textbox surrounded by a panel, its very much possible that the panel background color can be inherited by the textbox.
-- Visual: - This is the class which helps WPF UI to have their visual representation.
-- UI Element: - This class helps to implement features like events, input, layouting etc.
-- Framework element: - This class supports for templating , styles , binding , resources etc.
-- And finally all WPF controls textbox , button , grids and whatever you can think about from the WPF tool box inherits from the framework element class.
+- `Dispatcher:` - This class ensures that all WPF UI objects can be accessed directly only by the thread who own him. Other threads who do not own him have to go via the dispatcher object.
+- `Dependency`: - WPF UI elements are represented by using XAML which is XML format. At any given moment of time a WPF element is surrounded by other WPF elements and the surrounded elements can influence this element and this is possible because of this dependency class. For example if a textbox surrounded by a panel, its very much possible that the panel background color can be inherited by the textbox.
+- `Visual`: - This is the class which helps WPF UI to have their visual representation.
+- `UIElement`: - This class helps to implement features like events, input, layouting etc.
+- `Framework element`: - This class supports for templating , styles , binding , resources etc.
+- And finally all WPF controls `textbox` , `button` , `grid` and whatever you can think of from the WPF tool box inherits from the framework element class.
 
 ## WPF Architecture
 
@@ -71,11 +71,11 @@ App.xaml is the start up file or a boot strapper file which triggers your first 
 
 ## Panels
 
-- Grid
-- StackPanel
-- WrapPanel
-- DockPanel
-- Canvas
+- `Grid`
+- `StackPanel`
+- `WrapPanel`
+- `DockPanel`
+- `Canvas`
 
 ### DockPanel
 
@@ -100,5 +100,5 @@ App.xaml is the start up file or a boot strapper file which triggers your first 
 </Canvas>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MzE3ODQ4NiwtNzczOTQyODQyXX0=
+eyJoaXN0b3J5IjpbMTc5Mjg3ODU5OSwtNzczOTQyODQyXX0=
 -->
