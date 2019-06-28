@@ -28,32 +28,23 @@ So this `StackPanel` is resolved from the default namespace and the name attribu
 <StackPanel x:Name="myStack" />
 ```
 
-`x:name` and `name` are the same - but sometimes you need to use x:name to get it to work
+`x:name` and `name` are the same - but sometimes you need to use `x:name` to get it to work
 
 
-WPF Control Categories
+## WPF Control Categories
 
 WPF controls can be categorized in to four categories:-
-
-	* 
-Control: - This is the basic control with which you will work most of time. For example textbox, buttons etc. Now controls which are standalone control like button , text box , labels etc are termed as content control. Now there are other controls which can hold other controls, for instance itemscontrols. Itemscontrol can have multiple textbox controls, label controls etc.
-	* 
-Shape: - These controls help us to create simple graphic controls like Ellipse, line, rectangle etc.
-	* 
-Panel: - These controls help to align and position the controls. For instance grid helps us to align in a table manner, stack panel helps for horizontal and vertical alignment.
-
-
-
-
-	* 
-Content presenter: - This control helps to place any XAML content inside it. Used when we want to add dynamic controls on a WPF screen.
+- Control: - This is the basic control with which you will work most of time. For example textbox, buttons etc. Now controls which are standalone control like button , text box , labels etc are termed as content control. Now there are other controls which can hold other controls, for instance itemscontrols. Itemscontrol can have multiple textbox controls, label controls etc.
+- Shape: - These controls help us to create simple graphic controls like Ellipse, line, rectangle etc.
+- Panel: - These controls help to align and position the controls. For instance grid helps us to align in a table manner, stack panel helps for horizontal and vertical alignment.
+- Content presenter: - This control helps to place any XAML content inside it. Used when we want to add dynamic controls on a WPF screen.
 
 
 
 
 
 
-WPF Object Hierarchy
+## WPF Object Hierarchy
 
 
 
@@ -135,5 +126,5 @@ Canvas:
 </Canvas>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg0MDYwMzIwXX0=
+eyJoaXN0b3J5IjpbLTc3Mzk0Mjg0Ml19
 -->
