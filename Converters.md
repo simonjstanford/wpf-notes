@@ -18,29 +18,30 @@ Identify the converter to be used
 
 Use the converter
 
-```
+```xml
 <Setter Property ="IsEnabled" Value="{Binding IsChecked, Converter={ StaticResource boolToVisConverter}}" />
+```
 
 The converter class
 
-
-    [ValueConversion( typeof( bool), typeof( Visibility))]
-    public class BoolToVisibilityConverter: IValueConverter
+```csharp
+[ValueConversion( typeof( bool), typeof( Visibility))]
+public class BoolToVisibilityConverter: IValueConverter
+{
+    public object Convert( object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
-        public object Convert( object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-        {
-            if (( string)parameter == "Inverse")
-                value = !System. Convert.ToBoolean(value);
+        if (( string)parameter == "Inverse")
+            value = !System. Convert.ToBoolean(value);
 
-            return System. Convert.ToBoolean(value) ? Visibility.Visible : Visibility.Collapsed;
-        }
-
-        public object ConvertBack( object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
+        return System. Convert.ToBoolean(value) ? Visibility.Visible : Visibility.Collapsed;
     }
 
+    public object ConvertBack( object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MDUwNTIyMF19
+eyJoaXN0b3J5IjpbLTY3Mzc1NjMxNF19
 -->
