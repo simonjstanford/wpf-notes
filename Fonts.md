@@ -71,13 +71,12 @@ The property can have one of the following values:
 - `Ideal` – Default value, formats text using the standard WPF method. Glyph shapes are preserved, independent of their final position on the display
 - `Display` – Positions edges of glyphs on pixel boundaries. Can result in clearer edges of text.
 
-
 You should use the value of Ideal, except for the situations listed below.
 
-Set TextFormattingMode to Display when all of the following is true:
-- The FontSize of the text is 14 or less (small text)
+Set `TextFormattingMode` to `Display` when all of the following is true:
+- The `FontSize` of the text is 14 or less (small text)
 - Text is not being transformed (scaled, rotated, translated)
 - The exact shape of the glyphs is not critical (e.g. for some graphic design scenario)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNjE4MzIzMl19
+eyJoaXN0b3J5IjpbMTU0MzY1NjU4NF19
 -->
