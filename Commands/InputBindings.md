@@ -1,8 +1,8 @@
 # InputBindings
 
-User interface elements also have an InputBindings collection that contains KeyBinding and MouseBinding instances, each of which maps keyboard or mouse input to a command that is also present in the CommandBindings collection.
+User interface elements also have an `InputBindings` collection that contains `KeyBinding` and `MouseBinding` instances, each of which maps keyboard or mouse input to a command that is also present in the `CommandBindings` collection.
 
-In the code below, we wire up the Open command for both key (Ctrl+O) and mouse (Ctrl+Left Click) input.
+In the code below, we wire up the `Open` command for both key (Ctrl+O) and mouse (Ctrl+Left Click) input.
 
 ```csharp
 public MainWindow()
@@ -51,7 +51,7 @@ Or in Xaml (there needs to be the appropriate methods in the code behind):
 </Window>
 ```
 
-Ctrl+O is automatically defined as an existing key binding that binds to the ApplicationCommands.Open command. You can remove it by binding Ctrl+O to the ApplicationCommands.NotACommand command. Ctrl+O will no longer be associated with the Open command.
+Ctrl+O is automatically defined as an existing key binding that binds to the `ApplicationCommands.Open` command. You can remove it by binding Ctrl+O to the `ApplicationCommands.NotACommand` command. Ctrl+O will no longer be associated with the Open command.
 
 ```xml
 <Window.InputBindings>
@@ -62,5 +62,5 @@ Ctrl+O is automatically defined as an existing key binding that binds to the App
 </Window.InputBindings>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM2ODU3MTMwXX0=
+eyJoaXN0b3J5IjpbLTc3NzA1MDcyMiw1MzY4NTcxMzBdfQ==
 -->
