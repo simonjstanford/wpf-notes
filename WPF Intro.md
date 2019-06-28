@@ -8,7 +8,7 @@
 - Hardware acceleration
 - Resolution independent
 
-xmlns stands for Xml namespaces
+`xmlns` stands for Xml namespaces
 
 This is the default namespace and helps to resolve overall WPF elements:
 
@@ -34,8 +34,8 @@ So this `StackPanel` is resolved from the default namespace and the name attribu
 ## WPF Control Categories
 
 WPF controls can be categorized in to four categories:-
-- Control: - This is the basic control with which you will work most of time. For example textbox, buttons etc. Now controls which are standalone control like button , text box , labels etc are termed as content control. Now there are other controls which can hold other controls, for instance itemscontrols. Itemscontrol can have multiple textbox controls, label controls etc.
-- Shape: - These controls help us to create simple graphic controls like Ellipse, line, rectangle etc.
+- Control: - This is the basic control with which you will work most of time. For example `TextBox`, `Button` etc. Now controls which are standalone control like button , text box , labels etc are termed as content control. Now there are other controls which can hold other controls, for instance `itemscontrol`. `Itemscontrol` can have multiple `textbox` controls, label controls etc.
+- Shape: - These controls help us to create simple graphic controls like ellipse, line, rectangle etc.
 - Panel: - These controls help to align and position the controls. For instance grid helps us to align in a table manner, stack panel helps for horizontal and vertical alignment.
 - Content presenter: - This control helps to place any XAML content inside it. Used when we want to add dynamic controls on a WPF screen.
 
@@ -46,7 +46,7 @@ WPF controls can be categorized in to four categories:-
 
 ![Intro2](../media/Intro2.png)
 
-- Object: - As WPF is created using .NET so the first class from which WPF UI classes inherits is the .NET object class.
+- `Object`: - As WPF is created using .NET so the first class from which WPF UI classes inherits is the .NET object class.
 - Dispatcher: - This class ensures that all WPF UI objects can be accessed directly only by the thread who own him. Other threads who do not own him have to go via the dispatcher object.
 - Dependency: - WPF UI elements are represented by using XAML which is XML format. At any given moment of time a WPF element is surrounded by other WPF elements and the surrounded elements can influence this element and this is possible because of this dependency class. For example if a textbox surrounded by a panel, its very much possible that the panel background color can be inherited by the textbox.
 - Visual: - This is the class which helps WPF UI to have their visual representation.
@@ -77,9 +77,9 @@ App.xaml is the start up file or a boot strapper file which triggers your first 
 - DockPanel
 - Canvas
 
-### DockPanel:
+### DockPanel
 
-
+```xml
 <DockPanel>
 <Label DockPanel.Dock="Top" Height="100" Background="Red">Top 1</Label>
 <Label DockPanel.Dock="Left" Background="LightGreen">Left</Label>
@@ -87,18 +87,18 @@ App.xaml is the start up file or a boot strapper file which triggers your first 
 <Label DockPanel.Dock="Bottom" Background="LightBlue">Bottom</Label>
 <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center"> Demo of Dock panel</TextBlock>
 </DockPanel>
+```
 
+### Canvas
 
-Canvas:
-
-
+```xml
 <Canvas>
      <Button Canvas.Left="10">Top left</Button>
      <Button Canvas.Right="10">Top right</Button>
      <Button Canvas.Left="10" Canvas.Bottom="10">Bottom left</Button>
      <Button Canvas.Right="10" Canvas.Bottom="10">Bottom right</Button>
 </Canvas>
-
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MTQ1OTM4MSwtNzczOTQyODQyXX0=
+eyJoaXN0b3J5IjpbMTk1MzE3ODQ4NiwtNzczOTQyODQyXX0=
 -->
