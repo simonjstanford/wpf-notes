@@ -44,6 +44,7 @@ private void cmdPause_Click(object sender, EventArgs e)
 }
 ```
 
+Also see [https://github.com/simonjstanford/wpf-taskbar-progress-overlay](https://github.com/simonjstanford/wpf-taskbar-progress-overlay)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Nzg5NzkwNjBdfQ==
+eyJoaXN0b3J5IjpbMTM4NDc1OTIzMSwtMTU3ODk3OTA2MF19
 -->
