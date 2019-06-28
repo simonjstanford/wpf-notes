@@ -1,8 +1,8 @@
 # Command Target
 
-The source of a routed command is the element that is invoking the command. The sender parameter in the Executed or CanExecute handlers is the object that owns the event handler. Setting the Command parameter of a Button to a particular command and then binding the command to some code in the CommandBindings for a main Window, the button is the source and the window is the sender.
+The `source` of a routed command is the element that is invoking the command. The `sender` parameter in the `Executed` or `CanExecute` handlers is the object that owns the event handler. Setting the `Command` parameter of a `Button` to a particular command and then binding the command to some code in the `CommandBindings` for a main Window, the button is the source and the window is the sender.
 
-When setting the Command property, you can also set the CommandTarget property, indicating a different element that should be treated as the source of the routed command. The Find command now appears to originate from the TextBox. We can see this in the event handler for the Executed event.
+When setting the` Command` property, you can also set the `CommandTarget` property, indicating a different element that should be treated as the source of the routed command. The `Find` command now appears to originate from the `TextBox`. We can see this in the event handler for the `Executed` event.
 
 ```xml
 <Window x:Class="WpfApplication1.MainWindow"
@@ -30,7 +30,7 @@ When setting the Command property, you can also set the CommandTarget property, 
 </Window>
 ```
 
-In the example below, clicking on the Button initiates a Paste command, but the routed command originates with a TextBox rather than the button. In this particular case, because a TextBox implicitly has a command binding for the Paste command, text currently in the paste buffer is automatically pasted into the TextBox. No code-behind is required in order for this to work.
+In the example below, clicking on the button initiates a paste command, but the routed command originates with a `TextBox` rather than the button. In this particular case, because a `TextBox` implicitly has a command binding for the paste command, text currently in the paste buffer is automatically pasted into the `TextBox`. No code-behind is required in order for this to work.
 
 ```xml
 <Window x:Class="WpfApplication1.MainWindow"
@@ -51,5 +51,5 @@ In the example below, clicking on the Button initiates a Paste command, but the 
 </Window>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1OTQ4NzM2NF19
+eyJoaXN0b3J5IjpbLTExMDc3NTE2ODIsLTg1OTQ4NzM2NF19
 -->

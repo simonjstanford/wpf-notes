@@ -1,6 +1,6 @@
 # Predefined Commands
 
-In the example below, we bind the ApplicationCommands.Open command to some custom code by adding a CommandBinding instance to the top-level window’s CommandBindings property.
+In the example below, we bind the `ApplicationCommands.Open` command to some custom code by adding a `CommandBinding` instance to the top-level window’s `CommandBindings `property.
 
 ```csharp
 public MainWindow()
@@ -45,7 +45,7 @@ Or in Xaml (there needs to be the appropriate methods in the code behind):
 </Window>
 ```
 
-If you want to use the same command object, but bind it to different executable code for different UI elements, you can instead add the CommandBinding objects to the CommandBindings for individual elements. In the code below, we create two different bindings for the ApplicationCommands.Open command.
+If you want to use the same command object, but bind it to different executable code for different UI elements, you can instead add the `CommandBinding` objects to the `CommandBindings` for individual elements. In the code below, we create two different bindings for the `ApplicationCommands.Open` command.
 
 ```csharp
 public MainWindow()
@@ -66,5 +66,5 @@ public MainWindow()
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NzE1MTk0MV19
+eyJoaXN0b3J5IjpbLTE4OTEyNzM2OSwtODQ3MTUxOTQxXX0=
 -->
