@@ -9,6 +9,7 @@
 - [Fonts](Fonts.md#fonts)
 - [Generic RaisePropertyChanged](Generic%20RaisePropertyChanged.md#generic-raisepropertychanged)
 - [Handling Unhandled Exceptions](Handling%20Unhandled%20Exceptions.md#handling-unhandled-exceptions)
+- [Touch](Touch.md#touch)
 - [Virtualization](Virtualization.md#virtualization)
 - [Visual Brush](Visual%20Brush.md#visual-brush)
 - [WPF Intro](WPF%20Intro.md#wpf-intro)
@@ -149,7 +150,4 @@
 - [Jump Lists](Window/Jump%20Lists.md#jump-lists)
 - [Progress Bar & Overlay](Window/Progress%20Bar%20%26%20Overlay.md#progress-bar-overlay)
 
- 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxOTQwNDQ4N119
--->
+
