@@ -1,5 +1,13 @@
 # wpf-notes
 
+- [WPF Intro](WPF%20Intro.md#wpf-intro)
+	- [WPF Control Categories](WPF%20Intro.md#wpf-control-categories)
+	- [WPF Object Hierarchy](WPF%20Intro.md#wpf-object-hierarchy)
+	- [WPF Architecture](WPF%20Intro.md#wpf-architecture)
+	- [App.xaml](WPF%20Intro.md#appxaml)
+	- [Panels](WPF%20Intro.md#panels)
+		- [DockPanel](WPF%20Intro.md#dockpanel)
+		- [Canvas](WPF%20Intro.md#canvas)
 - [Anti-aliasing](Anti-aliasing.md#antialiasing)
 - [Application Scoped Properties](Application%20Scoped%20Properties.md#application-scoped-properties)
 - [Application Scoped Resources](Application%20Scoped%20Resources.md#application-scoped-resources)
@@ -12,14 +20,6 @@
 - [Touch](Touch.md#touch)
 - [Virtualization](Virtualization.md#virtualization)
 - [Visual Brush](Visual%20Brush.md#visual-brush)
-- [WPF Intro](WPF%20Intro.md#wpf-intro)
-	- [WPF Control Categories](WPF%20Intro.md#wpf-control-categories)
-	- [WPF Object Hierarchy](WPF%20Intro.md#wpf-object-hierarchy)
-	- [WPF Architecture](WPF%20Intro.md#wpf-architecture)
-	- [App.xaml](WPF%20Intro.md#appxaml)
-	- [Panels](WPF%20Intro.md#panels)
-		- [DockPanel](WPF%20Intro.md#dockpanel)
-		- [Canvas](WPF%20Intro.md#canvas)
 
 
 ## Animation
@@ -151,3 +151,6 @@
 - [Progress Bar & Overlay](Window/Progress%20Bar%20%26%20Overlay.md#progress-bar-overlay)
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTYwMDA0NTg0M119
+-->
