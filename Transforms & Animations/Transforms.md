@@ -2,7 +2,7 @@
 
 In WPF, you can easily apply one or more 2D transforms to user interface elements. A transform is a mathematical function applied to a user interface element that does one or more of the following:
 
-- Scaling Transform – make it bigger or smaller
+- [Scaling Transform](../Scaling%20Transform.md) – make it bigger or smaller
 - [Rotate Transform](../Rotate%20Transform.md) – spin the element around some point
 - Translates the element – move the element up/down/left/right
 - Skews the element – tilt the element, e.g. turn a rectangular element into a rhomboid
@@ -40,6 +40,6 @@ You can combine multiple transforms by setting the property to an instance of a 
 </StackPanel>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzUwOTY3OTQsLTExODM3OTczNjddfQ
-==
+eyJoaXN0b3J5IjpbMTY0OTAxMjI4NSwtMTgzNTA5Njc5NCwtMT
+E4Mzc5NzM2N119
 -->
