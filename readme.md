@@ -14,6 +14,11 @@
 - [WPF Intro](WPF%20Intro.md#wpf-intro)
 	- [WPF Control Categories](WPF%20Intro.md#wpf-control-categories)
 	- [WPF Object Hierarchy](WPF%20Intro.md#wpf-object-hierarchy)
+	- [WPF Architecture](WPF%20Intro.md#wpf-architecture)
+	- [App.xaml](WPF%20Intro.md#appxaml)
+	- [Panels](WPF%20Intro.md#panels)
+		- [DockPanel](WPF%20Intro.md#dockpanel)
+		- [Canvas](WPF%20Intro.md#canvas)
 
 
 ## Animation
