@@ -9,10 +9,11 @@
         </Style>
     </DataGridTextColumn.ElementStyle>
 </DataGridTextColumn>
+```
 
-Use LoadingRow to check each row when it's loaded and change its style:
+Use `LoadingRow` to check each row when it's loaded and change its style:
 
-
+```csharp
 private SolidColorBrush highlightBrush = new SolidColorBrush(Colors.Orange);
 private SolidColorBrush normalBrush = new SolidColorBrush(Colors.White);
 
@@ -35,5 +36,5 @@ private void DataGrid_LoadingRow(object sender, DataGridRowEventArgs e)
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NzQ0Mjc4Nl19
+eyJoaXN0b3J5IjpbLTIwNDYxNzk0MzVdfQ==
 -->

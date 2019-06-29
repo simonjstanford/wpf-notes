@@ -225,7 +225,7 @@ public bool OnlyJoans
 ```
 
 ## Live Sorting
-By default, when you’re using a `CollectionViewSource` to do sorting, grouping and filtering in a list-based control, the sorting/grouping/filtering behavior will only updated when you explicitly refresh the `CollectionViewSource` (by calling Refresh) or when you add or remove something to the collection.
+By default, when you’re using a `CollectionViewSource` to do sorting, grouping and filtering in a list-based control, the sorting/grouping/filtering behavior will only updated when you explicitly refresh the `CollectionViewSource` (by calling `Refresh`) or when you add or remove something to the collection.
 
 You can enable live sorting in the `CollectionViewSource` to cause it to resort items when one or more properties on the bound objects change. In the example below, we set the `IsLiveSortingRequested` property to true and specify that the `Actor.LastName` property is the property to live sort on. Now when we make a change to the last name of one of the actors, the sorting is updated.
 
@@ -260,6 +260,6 @@ Like sorting, filtering in a `CollectionViewSource` is not automatically done wh
 </CollectionViewSource>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMzUwMzY3LDg2Mzk3Mjc5MywxNjE0ND
-Q1ODFdfQ==
+eyJoaXN0b3J5IjpbMTI3MDE2NTU3OSwtNzIzNTAzNjcsODYzOT
+cyNzkzLDE2MTQ0NDU4MV19
 -->

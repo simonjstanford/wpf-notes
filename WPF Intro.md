@@ -39,12 +39,12 @@ WPF controls can be categorized in to four categories:-
 - Panel: - These controls help to align and position the controls. For instance grid helps us to align in a table manner, stack panel helps for horizontal and vertical alignment.
 - Content presenter: - This control helps to place any XAML content inside it. Used when we want to add dynamic controls on a WPF screen.
 
-![Intro1](../media/Intro1.png)
+![Intro1](media/Intro1.png)
 
 
 ## WPF Object Hierarchy
 
-![Intro2](../media/Intro2.png)
+![Intro2](media/Intro2.png)
 
 - `Object`: - As WPF is created using .NET so the first class from which WPF UI classes inherits is the .NET object class.
 - `Dispatcher:` - This class ensures that all WPF UI objects can be accessed directly only by the thread who own him. Other threads who do not own him have to go via the dispatcher object.
@@ -56,7 +56,7 @@ WPF controls can be categorized in to four categories:-
 
 ## WPF Architecture
 
-![Intro3](../media/Intro3.png)
+![Intro3](media/Intro3.png)
 
 - User32:- It decides which goes where on the screen.
 - DirectX: - As said previously WPF uses directX internally. DirectX talks with drivers and renders the content.
@@ -100,5 +100,6 @@ App.xaml is the start up file or a boot strapper file which triggers your first 
 </Canvas>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5Mjg3ODU5OSwtNzczOTQyODQyXX0=
+eyJoaXN0b3J5IjpbMTc0Mzk4NDkxMiwxNzkyODc4NTk5LC03Nz
+M5NDI4NDJdfQ==
 -->

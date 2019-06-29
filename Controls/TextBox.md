@@ -42,11 +42,9 @@ Spell checking:
 
 If you want to limit a user to entering only uppercase or only lowercase in a particular `TextBox`, you can set the `CharacterCasing` property as follows:
 
-```xml
-- Normal – Default setting, allows both uppercase and lowercase
-- Lower – Force all entered text to lowercase
-- Upper – Force all entered text to uppercase
-```
+- `Normal` – Default setting, allows both uppercase and lowercase
+- `Lower` – Force all entered text to lowercase
+- `Upper` – Force all entered text to uppercase
 
 
 ## Restricting text in a TextBox:
@@ -125,5 +123,6 @@ So you can't separate these two colors.-->
          SelectionOpacity="0.1"/>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzOTkwNzIwNCwtNzQ0NTAyOTJdfQ==
+eyJoaXN0b3J5IjpbMTg2NTgxNjczNSwxNjM5OTA3MjA0LC03ND
+Q1MDI5Ml19
 -->

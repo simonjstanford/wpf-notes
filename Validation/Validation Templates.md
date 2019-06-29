@@ -31,8 +31,8 @@ change in the layout of the original window.
 </Style>
 ```
 
-You can also set the validation template to null and use triggers to change the colour of an existing border when there is a validation error:
+You can also set the validation template to null and use triggers to change the colour of an existing border when there is a validation error.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNDgwNjY1NCwtNzgyMzg5NzMyLC01NT
-U1MzU4MzldfQ==
+eyJoaXN0b3J5IjpbLTE4ODMyMTY1NCwxMTI0ODA2NjU0LC03OD
+IzODk3MzIsLTU1NTUzNTgzOV19
 -->
